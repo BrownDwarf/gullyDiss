@@ -1,0 +1,76 @@
+\chapter{UV contact lithography production cookbook}
+
+
+%Table 4: Default recipe for UV contact lithography  produced grating production, from start to finish	
+
+\begin{longtable}{cp{15cm}}
+	%\caption{Recipe for e-Beam Si grating production}
+	%\begin{tabular}{cp{15cm}}
+	\toprule
+	\multicolumn{2}{c}{Photoresist Coating} \\
+	\midrule
+1.&Identify the high polished surface by inspecting the major flat  \\
+2.&Blow off surface particles with N2 gun\\
+3.&Center the substrate on the spinner  \\
+4.&Perform static dispense of a pipette 60\% full of room temperature S1805 photoresist.  Do not agitate the photoresist, to avoid bubbles.  Draw the resist from the middle or top of the resist bottle to avoid settled particles at the bottom.\\
+5.&Initiate the spin with 300 RPM for 5 seconds then ramp up to 1800 RPM for 50 seconds or until the coating is uniform, spin down at 500 RPM for 3 seconds.\\
+6.&Inspect the coating for uniformity and comets.  Judge the defect density and decide whether to recoat or not.  If you have to recoat it, spray the surface with acetone, then IPA, then water.\\
+7.&Place the substrate in a clean Pyrex dish and move it to the wet bench hood- resist solvent fumes are hazardous.  Soak a lab safe Q-tip swab in acetone, flicking off excess solvent so it doesn't drip.  Forecefully drag the tip of the acetone-wetted swab around the edge of the substrate to remove the edge bead.  Reapply acetone to the swab as needed.\\
+8.&Place the Pyrex dish and substrate into the oven to bake at $115^{\circ}$ C for 20 minutes.  This process evaporates the solvents from the resist.\\
+9.&Cool the substrate on a metallic surface for a long time.  Like an hour or two.  Don't let anyone mess with it and keep it away from solvents.\\
+	\midrule
+	\multicolumn{2}{c}{Exposure} \\
+	\midrule
+10.&Prepare the 16th floor cleanroom environment: turn on the gas outside the cleanroom for the airgun inside, wipe down boxes, phones, cameras, etc with IPA.  Have an opaque transportation system in use to protect the part from stray UV light from sunlight or room lights. \\
+11.&Enter the cleanroom following the procedure described by Philip.  It is posted on the entryway.  Turn on the vacuum pump when you are in the antechamber.\\
+12.&Turn on the UV lamp once you are inside the clean area.  It takes 4 minutes to warm up and stabilize.  The shutter should be closed for safety and resist exposure risk.\\
+13.&Turn on the red laser, stop down the iris to as small as it will go without forcing it.\\
+14.&Inspect the car and translation stage to see if it has approximately the right amount of range of motion for the substrate you are dealing with. Specifically, lower the vertical translation stage so that the substrate will start as low as possible.  Disengage the vacuum, line up the requisite allen wrenches at arms length.\\
+15.&Place the substrate on the vacuum chuck with the major flat as close to parallel to the mask holding rim.\\
+16.&Mark or note the position of the small red laser spot on the above-mounted cleanroom paper.\\
+17.&Blow off the chrome side of the mask with the airgun.\\
+18.&Carefully move the mask to the holder and set it in place, don't let the mask drop into place to avoid fracture.  Gingerly lower it into place with your fingers from below.  Verify that chrome side is down.\\
+19.&Lock down the 2 side set screws on the mask, gently tighten the 4 corner screws to the mask.\\
+20.&Linearly translate the mounting pillar that holds the vacuum chuck and substrate so that the major flat is flush to the edge of the chrome mask.  Use the fine adjust rotation stage to align the edges as close as possible.  The purpose of this step is to avoid dislocations in the Si crystal structure during wet-etching.\\
+21.&Use the tip/tilt knobs to align the red laser spot from the substrate and the fan of spots from the mask so the substrate spot is coincident with the zero order spot on the mask.  The zero order spot location can be challenging to determine, one dubiously trustworthy strategy I have used is to subtly torque the mask to monitor the diffraction order that goes through dark and bright fringes.\\
+22.&Open the red laser iris to ~20 mm to inspect the pattern of fringes.  The substrate should be centered on the laser beam, move the car over if you have to.\\
+23.&Vertically translate the substrate towards the mask while iteratively using the tip tilt adjustment knobs to minimize the fringes.  The fringes will vibrate minutely while the mask and substrate are out of contact.  The fringes will freeze once the substrate and mask are in firm contact; at this point the tip-tilt adjustment must halt so that the photoresist is not sheared against the mask.  \\
+24.&Set the motor software to run for the desired number of passes, at the normal rate.\\
+25.&Open the shutter on the UV lamp\\
+26.&Close the shutter on the UV lamp\\
+27.&Inspect the red laser spot in the same place as before the exposure and note the extent to which the morphologies agree.\\
+28.&Pack the substrate in a light-tight sealed container.\\
+29.&Turn off the UV lamp, laser, airgun, vacuum, lights.  The computer and motor are left on usually.\\
+	\midrule
+	\multicolumn{2}{c}{Development} \\
+	\midrule
+30.&Prepare MF-321 developer bath and two DI H2O baths\\
+31.&Develop for 1 minute\\
+32.&Remove and submerge in H2O bath as quickly as possible\\
+33.&Remove and submerge in second H2O bath to be extra certain the development has halted\\
+34.&Remove and spray with H2O squeeze bottle to look for grating lines in resist, holding the surface parallel to gravity vector\\
+35.&Use the N2 airgun to dry off the surface.\\
+	\midrule
+	\multicolumn{2}{c}{Inspection} \\
+	\midrule	
+36.&Examine the pattern in an optical microscope to evaluate the development success- check the corners of patterns to see if they are fully developed, and look for residual photoresist across the pattern surface.  Perform additional development, clearing, and cleaning if needed.  \\
+37.&Shoot a laser at the surface and examine the reflected orders, do not look directly into the laser beam.  Note the presence of ghosts and distortions of the beam shape  \\
+	\midrule
+	\multicolumn{2}{c}{Dry Etch} \\
+	\midrule		
+.&.\\	
+	\midrule
+	\multicolumn{2}{c}{Wet Etch} \\
+	\midrule		
+.&Prepare tank bath to desired temperature-  40$^{\circ}$ or 70$^{\circ}$ C  \\
+.&Prepare wet etchant solution- 40\% KOH 60 \% DI water, stir at 360 RPM in tall Teflon beaker, remove and put in thermal bath  \\
+.&Add 25\% IPA and initiate ultrasonic agitation \\
+.&Remove the photoresist with photoresist remover at 90$^{\circ}$ C for 30 minutes  \\
+.&Soak the substrate in DI water, heat to thermal bath temperature  \\
+.&Transfer the substrate into the KOH solution when the solution temperature has leveled off \\
+.&Monitor and record the solution temperature a few times during the etching cycle  \\
+.&Immediately dunk the piece into two separate room temperature DI water vessels to stop etching  \\
+.&Dry with N2 gun\\
+	\bottomrule
+	%\end{tabular}
+\end{longtable}	
