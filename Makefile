@@ -20,4 +20,8 @@ all: gullydiss.pdf
 	rm -rf *.lof
 	rm -rf *.lot
 	rm -rf *.idx
-
+	rm -rf ch1/*.aux
+	rm -rf chGratingDesign/*.aux
+	rm -rf chGratingProcess/*.aux
+	rm -rf chIshell/*.aux
+	rm -rf chFabryPerot/*.aux
