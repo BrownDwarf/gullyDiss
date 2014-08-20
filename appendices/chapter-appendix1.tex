@@ -1,0 +1,248 @@
+\chapter{Characterization of the grating testing setup}
+
+\section{Monochromator}
+
+%Cartoon of overall layout
+\begin{figure}
+\begin{center}
+    \includegraphics[width=0.48\textwidth]{question_mark.ps}
+  \end{center}
+  \caption[DK480 monochromator layout]{Spectral products' DK480 monochromator layout.  The monochromator is an SP DK480 with selectable 300 g/mm and 150 g/mm gratings on the grating assembly.  Table 1 summarizes the expected properties of the monochromator.  The image is from \url{http://www.spectralproducts.com}.}
+\end{figure}
+
+First, let's work out the expected resolution of the monochromator.  The monochromator has 2 gratings, one with a blaze peak at 2.0 $\mu$m and one with a blaze peak at 4.0 $\mu$m.  For the purposes of this document we will concern ourselves with the 2.0 $\mu$m blazed grating because this one is in the $1.5 < \lambda/\mu\rm{m} <\;2.5$ range of the IGRINS instrument.  The monochromator table summarizes the properties of these gratings.  There we see that the 2 $\mu$m grating is 300 grooves/mm, or $\sigma$=3.3 $\mu$m.  The grating has a blaze angle of 17.5$^\circ$, operates in first order, and has $\beta \sim 8^\circ$ so $\cos{\beta} \sim 1$.  From classical diffraction grating theory (Schroeder 2000) we can calculate the angular dispersion, and then calculate the linear dispersion at the exit slit with the monochromator focal length (480 mm):
+\begin{eqnarray}
+  \frac{d\beta}{d\lambda}&=& \frac{m}{\sigma \cos{\beta}}      \nonumber \\
+  \frac{dx}{d\lambda}&=& \frac{d\beta}{d\lambda} \times f = \frac{f}{\sigma}  \nonumber\\
+  	&\sim& 480 / (3.3 \times 10^{-3}) \sim 1.5 \times 10^{5}
+\end{eqnarray}
+For example, a 1 mm slit will cover approximately 7 nm of spectral bandwidth, and the entire visible portion of the spectrum $(\Delta \lambda = 300 \;\rm{nm})$ should cover about 4 cm at the focal plane, which is consistent with visual inspection.  The minimum slitwidth of 10 $\mu$m should provide a resolution of 0.07 nm, which is equivalent to a resolution $R=\frac{\lambda}{\delta \lambda}=30,000$.  However, diffraction and optical aberrations limit the resolution to $R<30,000$.  Specifically, the resolution for a given number $N$ of illuminated grooves in order $m$ is given by $R=mN$, with the number of illuminated grooves given by $N=W/\sigma$, where $W=68$ mm is the width of the grating in the DK480.  $R=20,000$, which is the same as saying $\delta x = \lambda/W \times f \sim 14\;\mu$m for $\lambda=2\;\mu$m.  This spot size is comparable to the minimum slitwidth, and so this spot size and grating limited resolution is convolved with the slit function.  To take all these contributions into account, we add the $\delta \lambda$'s in quadrature:
+\begin{eqnarray}
+	 \delta \lambda_{net}^2 &=& \delta \lambda_{disp}^2 + \delta \lambda_{grat}^2
+\end{eqnarray}
+
+In any case, the delivered resolution will be somewhat less than the predicted resolution due to optical aberrations.  The delivered resolution was measured with a HeNe laser at the factory, and is listed in the table.  For the 10 $\mu$m slit the average delivered resolution is 0.25 nm or $R=2500$.  The figure below shows the expected and delivered resolution as a function of slit width.  In the next section on the camera and detector system, we study how the finite angular resolution of the camera system provides a related limitation to our spectral resolution.
+
+
+%Table of monochromator properties
+\input{gta_CA1_tab_SP_monch.tex}
+
+%Efficiency as a function of wavelength for the 300 g/mm grating
+\begin{figure}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{question_mark.ps}
+  \end{center}
+  \caption[Absolute efficiency of the 300 g/mm grating in the DK480 monochromator]{Absolute efficiency of the 300 g/mm grating in the DK480 monochromator.  The light intensity delivered to the optic is the product of the efficiencies of the light source spectral energy distribution, the filter curves, the gratings in the monochromator, the post slit lenses and mirrors, and the detector efficiency.}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{question_mark.ps}
+  \end{center}
+  \caption[Absolute efficiency of the 300 g/mm grating in the DK480 monochromator, part II. ]{Absolute efficiency of the 300 g/mm grating in the DK480 monochromator over the wavelength range 0.5 to 2.5 $\mu$m.}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \subfloat[Visible lamp]{\label{fig:vis_curve}\includegraphics[width=0.5\textwidth]{GTA_eff_vis_clear_2um_PbS}}
+  \subfloat[NIR lamp]{\label{fig:nir_curve}\includegraphics[width=0.5\textwidth]{GTA_eff_nir_clear_2um_PbS}}
+  \caption[Predicted relative spectral efficiency of experimental setup- visible and near-IR]{Expected relative efficiency for the specified combination of monochromator light source, monochromator grating, and detector.  We assume no filter is in the beam path.  The relative efficiency is roughly what we've seen from experiments.  The left plot demonstrates the visible lamp light source which has a color temperature of 3100 K, the right plot demonstrates the near-IR light source which has a color temperature of 950$^\circ$ C.  The visible light source lamp was used in experiments 8 and 9, and the NIR lamp was used primarily in more recent experiments.  Experiments employing the visible light source will demonstrate order-overlap since there is quite a bit of blue second order light overlapping.  We do not know if the PbS detector is sensitive below 1.0 $\mu$m.  It's important to note that these are (predicted) relative efficiencies, not absolute efficiencies.  The visible lamp may be brighter at any given near-IR wavelength, depending on its power, and coupling to the entrance slit.  This plot is merely to inform the design of experiments, and over what wavelength ranges we can expect to achieve relatively high signal to noise.  It looks like 1.5 to 2.5 $\mu$m has relatively smoothly variable signal in both scenarios.}
+  \label{fig:GTA_layout}
+\end{figure}
+
+
+\subsection{Filterwheel and filters}
+The filter wheel is the AB300-T from Spectral Products.  The AB300-T is connected to the DK480 monochromator by a serial cable, and can be commanded through the DK480's connection to the computer.  The AB300-T has five slots sized for 1 inch filters.  Commercially available 1-inch filters generally are unthreaded and need to be secured with a 1-inch retaining ring such as Thorlabs part number SM1RR, and then tightened or loosened with a pin spanner wrench like Thorlabs part number SPW602.  On November 15, 2011 I identified that the filter wheel was unresponsive to the DK480 commands issued from the computer.  I  contacted Spectral Products to troubleshoot the issue.  I will send the filter wheel back to Spectral Products.
+
+%Table of filter wheel slots
+\input{gta_CA1_tab_filters.tex}
+
+%Efficiency as a function of wavelength for the AB Filters
+\begin{figure}
+    \includegraphics[width=1.0\textwidth]{question_mark.ps}
+  \caption[Spectral products filter curves]{Filter curves for the AB series filters provided by Spectral Products.  We have two low pass filters from Spectral products- AB3190, AB3300. The filter curve for AB3300 is not shown, and was not included in their supplied filter curves data.  The online table indicates that AB3300 is a low pass filter with transition wavelength of 3000 nm, with a transition tolerance of 50nm.  We also have a Melles Griot 10 nm FWHM interference filter.  See the table on filter properties.  It is important to use order blocking filters because second order light could overlap and mimic ghost orders, or throw off the calibration with reference mirrors.  Since we want to measure efficiencies at the few percent levels, we probably should use order blocking filters unless it is demonstrated the order overlap is negligible.}
+\end{figure}
+
+%Efficiency as a function of wavelength for the AB Filters
+\begin{figure}
+    \includegraphics[width=0.9\textwidth]{exp48_49}
+  \caption[FEL1450 LP filter]{The need for order blocking filters.  The left panel shows the raw data with and without the FEL1450 LP filter.  The light blue and purple curves are scans of an Al mirror with the visible light source before and after the green curve scan, which is a scan of the identical system, but with an FEL1450 Thorlabs low-pass filter placed directly behind the post-slit collimating lens (optic number 10 in the diagram of our optical bench configuration).  In subsequent trials employing the FEL1450 filter we placed the filter on an easily removable flip mount post at position 11, which is roughly the position of the image of the grating since it is almost one focal length behind the post-slit lens.  The FEL1450 has an cut-on wavelength of 1450 nm.  The primary purpose of this filter is to block second order light from the bright visible lamp from blanketing the first order infrared light.  The presence of this pernicious second order visible light is clear in the figure on the right, in which the efficiency approaches 100\% at 2900 nm, which is where second order 1450 nm light will cut on.  The blue curve on the right panel is the ratio of the green and light blue curves on the right, so with and without the FEL1450 filter.  The solid red curve is the manufacturer-provided specification data for the cut-on filter efficiency in the range $1400 < \lambda(\mathrm{nm}) < 1650 $.  The dotted red curve is the extrapolation of that curve from the manufacturer claim that the the minimum peak efficiency is 70\% through 2200 nm.  It is not clear how the filter performs after this wavelength.  It is also surprising that the observed flux ratio just after the cut-on wavelength at 1500$-$1700 nm exceeds the manufacturer provided efficiency data.  Either our filter is out-performing the specification or there is additional second order light falling at 1500 nm, which would be coming from 750 nm.  The filter properties at that short of a wavelength are not known, but this scenario is unlikely anyways since the detector and grating are inefficient at these wavelengths.}
+\end{figure}
+
+\section{Camera System and Differential lens/detector motion}
+\subsection{Angular resolution of the camera system}
+It is important to understand the camera system's angular resolution, because our system must be able to separate adjacent diffraction orders of the diffraction gratings we seek to measure.  The pixel sizes for our detectors are listed in the table detailing detector properties in the appendix.  We have two camera lenses- with focal lengths of 110 mm and 200 mm.  Note that examination of the pixel is deceiving because the active detecting area is actually much smaller than the entire surface area of the metallic surface seen in visual inspection.  The next figure demonstrates the sub-area which is active.  Experiments 26, 27, 28, 31, and 32 probed the demonstrated slit image width.  We were surprised to find that experiments 26, 27 and 28 demonstrated a big dip in the center of the convolved intensity profile.
+
+One cause of angular resolution loss and a potential cause of systematic error is the differential camera lens and detector motion.  In our design the camera lens and detector system share a common axis which pivots about the axis rotation, which through the immersion grating.  The next figure shows a cartoon of the geometry of the differential lens and detector motion.
+
+\begin{figure}
+  \centering
+  \subfloat[Dispersion relation]{\includegraphics[width=0.5\textwidth]{question_mark.ps}}
+  \subfloat[160 $\mu$m slit with CA1a, 2D profile]{\includegraphics[width=0.5\textwidth]{question_mark.ps}} \\ 
+    \subfloat[160 $\mu$m slit with Al mirror]{\includegraphics[width=0.5\textwidth]{question_mark.ps}}
+      \subfloat[160 $\mu$m slit with CA1a, 1D profile]{\includegraphics[width=0.5\textwidth]{question_mark.ps}}
+  \caption[Dispersion for $f$=200 mm camera]{Dispersion for the $f$=200 mm camera, as measured by the $\alpha$NIR focal plane array.  The $\alpha$NIR detector has small (39 $\mu$m) pixels and does not require detector motion, so these values are accurate unconvolved profiles of the dispersion relation.  The light blue solid line in the upper left panel is the expected behavior for perfect imaging optics- the imaged width would be about twice the slit width, assuming a 2:1 camera to collimator focal length ratio.}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{question_mark.ps}
+  \end{center}
+  \caption[Differential camera motion]{Cartoon of the camera's differential motion}
+\end{figure}
+
+We can work out the amplitude of the differential camera motion in the following way.  First, notice in the previous figure in the first and third panel that beams diffracted from the grating at an angle $\theta_{d} = \theta_{a}$ from the optical axis are centered on the detector and so centroids of diffracted beams are undeviated.  The apparent angular widths are deviated by a factor involving the geometric values of the system.  Specifically, we are interested in case 2 in the figure, in which $\theta_{d} \ne \theta_{a}$.  In this case the focused spot position is one focal length behind the lens, parallel to the incoming beam.
+
+\begin{eqnarray}
+	%x_{lens}&=&L \cos{\theta_a} \nonumber \\
+	y_{lens}&=&L \sin{\theta_a} \nonumber \\
+	x_{spot}&\sim&(L+f_c)\cos{\theta_a}  \nonumber \\
+	y_{spot}&=&y_{lens} \nonumber \\
+	\tan{\theta_d} &=& \frac{y_{spot}}{x_{spot}} \sim \frac{L \sin{\theta_a}}{ (L+f_c)\cos{\theta_a}}  \nonumber 
+\end{eqnarray}
+
+What we really want is $d\theta_d/d\theta_a$:
+
+\begin{eqnarray}
+	\frac{d}{d\theta_a} \tan{\theta_d} &=& \frac{d}{d\theta_a} \frac{1}{1+\frac{f_c}{L}} \tan{\theta_a} \nonumber \\
+	\frac{d\theta_d}{d\theta_a} &=& k  \nonumber \\
+	\mathrm{with \;}k=\frac{1}{1+\frac{f_c}{L}}  \nonumber 
+\end{eqnarray}
+
+What is it we are actually measuring?  The output signal, which we will call $h(\theta)$, from the detector is the convolution of many angular and spectral functions:
+\begin{description}
+\item[$s(\theta)$]	The exit slit function. Set by the slit width, a negligibly weak function of $\lambda$.
+\item[$b(\theta)$]	The blur spot of the optics. Principally from intentional defocusing at the detector plane.
+\item[$g(\theta, \lambda)$]	The grating dispersion function.  This is a function of wavelength and angle. 
+\item[$p(\theta)$]	The pixel response function.  Looks like a tophat, but can have sub-pixel efficiency variations.
+\end{description}
+
+In principle, everything is a weak function of wavelength, for example the blur spot will change as a function of wavelength through chromatic aberrations.  We ignore these negligible wavelength dependent effects, except for the the grating which disperses the finite bandwidth beam into an angular spread (see previous figures).  For the purposes of figuring out the effect of the differential camera motion, will group $s$, $b$, and $g$, and any other heretofore unaccounted for (albeit negligible) angular and spectral functions, into a single delivered focal plane intensity profile, $f(\theta, \lambda)=g \convolution b \convolution s$.  First, let's consider the case in which the beam is monochromatic, so that $g(\theta, \lambda)=g(\theta)\delta(\lambda)$.  Let us further compare two different cases of angular motion.  In case 1 the beam and lens are stationary and only the detector moves steadily through the focal plane, pivoting about the axis of rotation centered on the immersion grating.  In case 2 both the lens and detector move along the same rigid arm, so that the image spot and detector are moving, albeit at different angular rates.  Let $\tau=\theta_a$ represent the angular position of the swing arm holding the detector for case 1, or lens and detector for case 2, with $\tau=0^\circ$ equal to the principal ray of the diffracted beam.  The angular center position of the focused spot in the detector plane is $\theta_d$, with $\theta_d= k \theta_a$ with $k$ defined above.
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=1.0\textwidth]{question_mark.ps}
+  \end{center}
+  \caption[Immersion grating transfer function]{Cartoon of the immersion grating transfer function.  The grating transfer function $g=g(\theta, \lambda)$ is a function of angle and wavelength.}
+\end{figure}
+
+Case 1: Detector motion only, lens fixed
+\begin{eqnarray}
+	h(\tau) = \int_{-\infty}^{\infty} f(\theta) p(\tau - \theta)\,\mathrm{d}\theta  \nonumber \\
+	h(\tau)=f(\theta) \convolution p(\theta)  \nonumber
+\end{eqnarray}
+
+Case 2: Detector and lens differential motion
+\begin{eqnarray}
+	h(\tau) = \int_{-\infty}^{\infty} f(\theta_d - \theta) p(\theta_a - \theta)\,\mathrm{d}\theta  \nonumber \\
+%	\mathrm{Which\; is\; the\; same\; as:\;}  \nonumber \\
+	h(\tau) = \int_{-\infty}^{\infty} f(\theta) p([1-k]\tau-\theta)\,\mathrm{d}\theta  \nonumber \\
+	h([1-k]\tau)=f(\theta) \convolution p(\theta) \nonumber 
+\end{eqnarray}
+
+Case 1 is a pure convolution, which is consistent with our intuition of smearing pixels with PSFs.  No problemo.  Case 2 is similar, the output function $h(\theta)$ is a convolution of $f$ and $p$, except stretched out by a factor of $1-k$.  Neat.  If the input signal is polychromatic, then $g(\theta)$ is a strong function of wavelength, but in fact the convolution proceeds the same way, stretching convolution of $g$ and $p$ by the factor $1-k$.  At the end of the day what we really want is the ratio, $r$, of the integrated intensity of a single monochromatic order from the immersion grating to the integrated intensity of a monochromatic beam from a reference mirror.  In terms of the quantities already defined, $r= \int h_{g}(\theta)/h_{m}(\theta)\,\mathrm{d}(\theta)$.  The area under the curve of a convolution is the product of the areas under the curves, so the pixel function (which is common to both the denominator and numerator in the ratio $r$), cancels out, as do all other common factors like $s$ and $b$.  Evidently $r$ is indifferent to the differential camera motion, which was not initially obvious to me, but now makes intuitive sense since the effect of the differential camera motion is merely a stretching of the pixel function.  To get a sense for the magnitude of the stretching, let us predict the factor $1-k$ for the geometry of our system under its two different operation modes.  For these modes $L=20.5$ and $f=110 \mathrm{\;or\;} 200$ mm.  The angular profiles will be stretched by factors of 2.9 and 2.0, respectively.  That there is less stretching for the longer focal length camera can be understood since it is more similar to the scenario of the detector moving freely from the lens, or in other words the relative motion is faster.  This whole angular rates problem is analogous to the difference between sidereal and synoptic rates in the apparent motion of celestial bodies in the solar system- Mars moves more slowly through the sky than does Jupiter even though Mars' angular space motion relative to the sun is faster than that of Jupiter.  
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{exp45_46}
+  \end{center}
+  \caption[Angular resolution experiment]{Experiment 45 and experiment 46 angular resolution experiments- observed instrumental profiles.  The width of the mirror slit is a few times smaller than the pixel width so that these profiles mostly indicate the instrumental pixel and motion response.The left panel is the instrumental profile of a monochromatic mirror beam with the lens mounted to the optical bench.  The right panel is the instrumental profile of a monochromatic mirror beam with the lens mounted to the swinging arm along the same axis as the detector.  The last panel is the latter experiment with its $x-$axis shrunk by a factor of 2, which is predicted from the differential motion and geometry of the system.  The match is good.  Based on the first panel we can directly estimate the effective width of the pixel- the $0.16^\circ$ width translates into 0.54 mm pixel width, but strictly less than this value since there is also some small contribution from the convolution of the slit.  This width is almost half as small as the 1 mm width we had been assuming based on the specs of comparable detectors and the limited information we had about our model. Our operational instrumental profile is the second panel, which has an angular width of about $0.30^\circ$.}
+\end{figure}
+
+In experiments 45 and 46 I directly measured the stretching factor for the system with $L=205$mm and $f_C=200$mm.  In experiment 45 I mounted the camera lens to the static optical bench so that the lens did not move with the swing arm, but the detector swung about the optical axis.  Experiment 46 had the lens mounted to the camera swing arm.  The angular scan profiles are shown in the next figure, with raw signal plotted against angular position, that is the angle of the arm.  The first panel shows experiment 45, the second panel shows experiment 46, and the last panel shows experiment 46 with its $x-$ scale compressed by a factor of 2, as predicted above for this camera system.
+
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=0.45\textwidth]{question_mark.ps}
+  \end{center}
+  \caption[Observed and predicted slit functions]{The observed slit function for the 110 mm focal length camera system.  The pixel demonstrates non-uniform sub-pixel response, up to a factor of 20\%.}
+\end{figure}
+
+
+
+\section{Detectors}
+%Table of single pixel detector properties
+\input{gta_CA1_tab_detectors.tex}
+
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{question_mark.ps}
+  \end{center}
+  \caption[PbS detector pixel geometry]{PbS detector pixel geometry.  The active area of the pixel is a subset of the entire metallic surface.  The dashed white lines show the detector's active area.  The ruler numbers demonstrate centimeters with sub-ticks equal to 1 mm.  The thick white bars near the pixel on the blow up image represent 3 and 1 mm.  The long axis of the detector active area must be parallel to the image long axis.  This requirement is tricky to accommodate with simple mountings, however, since the detector mounting set-screw is perpendicular to the long axis.  Casey Deen pointed out these issues in the geometry on October 31, 2011.  Experiments I performed before this date should not demonstrate sharp top-hat function PSFs.}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \subfloat[Slit image]{\label{fig:GTA_slit}\includegraphics[width=0.5\textwidth]{question_mark.ps}}
+  \subfloat[Pupil image]{\label{fig:GTA_im01}\includegraphics[width=0.5\textwidth]{question_mark.ps}}
+  \caption[Slit and pupil image compared to single pixel detector size]{ 
+  
+  \emph{Left-} Layout of the IR detector areas compared to the image of the slit, as produced with a reference mirror and the current optical camera configuration, which includes a $f=110$mm focal length lens.  The blue dashed line is the footprint of the $\alpha$NIR 2D focal plane array, which has 316 $\times$ 252 array of 39 $\mu$m square pixels.  The solid red line is the single pixel detector which is 1 $\times$ 3 mm, as shown in the previous figure.  The background shows a filled contour plot of the slit image taken with the $\alpha$NIR from 100 combined dark subtracted frames, with the $f=110$ mm focal length camera lens, 250 $\mu$m slit width and the minimum slit height provided by the monochromator, with $\lambda$=1.6 $\mu$m.  Apparently the minimum slit height the monochromator provides is not sufficiently small to capture the full slit image height.  Either the slit height should be reduced or the camera lens focal length should be reduced to capture all the incident light.
+  
+  \emph{Right-} Same as the previous figure, except the background shows a filled contour plot of an image of the light source lamp filament with a 2.9 mm slit width and the maximum slit height provided by the monochromator, with $\lambda$=1.6 $\mu$m.  The contours on the image are black-blue-light blue with 10, 20, 40, 80, 160, 320 counts/pixel, with the noise floor at 5.4 counts with $\sigma=$ 2.5 counts/pixel.  The single pixel detector cannot capture all the light of the grating image onto the single pixel detector.  I discourage the choice of this image, since the image width does not shrink appreciably with decreasing slit size, meaning we lose light off the sides of the detector, and we lose angular resolution.}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \subfloat[PbS and PbSe detectors]{\label{fig:PbS_det_eff}\includegraphics[width=0.8\textwidth]{question_mark.ps}} \\
+  \subfloat[InGaAs and Ge detectors]{\label{fig:Ge_det_eff}\includegraphics[width=0.8\textwidth]{question_mark.ps}}
+  \caption[Relative efficiency of single pixel detectors]{Relative efficiency of detectors comparable to but different from the models in our lab.  See the table with information on the detectors. The data are from \url{http://www.newport.com}.}
+\end{figure}
+
+
+
+\section{Equipment operation and performance}
+The measurement system presents some challenges, specifically aligning and collimating the low intensity invisible monochromatic beam, and scanning the diffracted orders with a small single pixel detector.  In this section we characterize the measurement equipment through tests of the resolution and delivered optical and electronic performance.  We scrutinize the experimental strategy for sources of systematic errors.
+
+\subsection{Repeatability}
+A key limitation in our measurement strategy is the repeatability and stability of the optical alignment, and electronic and lamp conditions.  Specifically, our strategy is to take reference beam or reference mirror measurements before and after the scans of our grating or optic of interest.  Since our scans last up to 30 hours or more, reference calibration measurements can be temporally separated by several days.  The measured signal can drift for many reasons, for example drift in the lamp filament temperature or detector temperature, or mechanical sag of mirror mounts induced by thermal expansion or vibration.  Ideally our measurement strategy would take contemporaneous calibrations or near-contemporaneous calibrations on scales much shorter than the thermal drift time scale.  Our measurement system's structural design currently makes contemporaneous reference measurements prohibitive.  In principle the addition of a motorized retractable mirror or a beam splitter could provide near-contemporaneous or contemporaneous reference measurement, but these hardware upgrades are not going to be pursued at this time.  In this section we quantify the delivered repeatability of our measurements.  Naturally, we can repeat measurements many times to average out the variations in repeatability, but of course this adds to the measurement timescale and turnaround.  Our goal is to achieve about 5\% repeatability of measurements.  This level of uncertainty is comparable to what is delivered in industry applications (as noted from our experience with II-VI Infrared, who reported a 3\% systematic error in their wafer witness samples for the JWST project, for example).  Furthermore, 5\% is a fair estimate for our other systematic errors arising from vignetting of optical components or chromatic aberrations, among milliard other factors, so doing much better than this in any single experiment is likely just fooling ourselves.
+
+The next figure demonstrates the repeatability of experiment 22 and 24.  These experiments served as the pre- and post- reference mirror calibrations for experiment 23.  The measurements were separated by 4 days, specifically from a experiment 22 was started on Friday November 17, 2011 and experiment 24 was started on Monday November 21, 2011.  Both experiments took 20 hours to complete.  One aspect of the experimental setup was altered over this time- the necessary swapping of the reference mirror for the CA1 immersion grating, and the subsequent re-replacement of the mirror.  This process has its own affiliated repeatability limitations, but notably our mount was designed to be stable by using a 2-pin ball stud plate and 2-hole base plate.  The repeatability of this mount has not be independently examined, but in principle could be tested to a few arcseconds with a simple laser.  In any case when replacing the ball stud plate I typically monitor the instantaneous signal reported on the lock-in amplifier front panel, and I carefully attempt to torque the ball stud plate.  I did not notice any change in the instantaneous signal.
+
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{exp22-24_plusdif}
+  \end{center}
+  \caption[Repeatability experiment]{Experiment 22 and experiment 24 overplotted to demonstrate the level of the repeatability of the measurements separated by 4 days.  The bottom panel shows the fractional difference of two curves which was computed as the absolute value of the difference divided by the sum of the two experiments, which is the same as half of the difference divided by the mean of the two experiments.  Blue line is the raw data, overplotted in black with a 21 pixel boxcar smooth.  The yellow dashed line is 5\% fractional difference from the mean.  The repeatability is better than 5\% over 1.5 $-$ 2.5 $\mu$m, which is our wavelength range of interest.}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=1.0\textwidth]{exp25and30}
+  \end{center}
+  \caption[Stability experiment]{Experiment 25 and experiment 30 overplotted to demonstrate the level of the stability of measurements at $\lambda = 2.0 \; \rm{ and } \;2.3\; \mu$m. \emph{Left:} The measured signal normalized to its starting value as a function of time.  No changes were made to the experimental setup over the duration of the experiment.  Experiment 25 lasted 17.6 hours, experiment 30 lasted 52.9 hours.  The standard deviations over those times was about 9\% and 2\%, with peak to valley amplitudes of and 91\% and 23\%.  Experiment 25 shows about 4.5 times as much instability as does experiment 30, despite the fact that experiment 25 is 3 times shorter than experiment 30.  This level of instability is demonstrated in the previous figure, where the curves at $\lambda=2.3 \; \mu$m match to 0.3\%, but the difference at $\lambda=2.0\;\mu$m is about 2\%.  It's not clear what is the cause of the wavelength-dependent instability, but my guess is that the near-IR lamp is warming or cooling and since 2.0 $\mu$m is on the Wein side of the black body curve, it is much more sensitive to minute temperature differences than the 2.3 $\mu$m measurements, which are close to the blackbody peak.  The sampling rates were semi-regular, with delivered mean time steps and standard deviations of $15.86\pm0.34$ and $15.85\pm0.09$ s, but maximum separations of up to 29 and 20 seconds respectively.  \emph{Right:} The power spectrum of experiment 30, normalized to its peak value, with the DC component removed.  The red dashed line is an unweighted linear fit to the data frequencies less than 0.001 Hz, excluding the DC component.  Since the sampling was not strictly regular, we interpolated (i.e. \emph{interpol()} in IDL) the time samples onto a 5 times finer grid than the semi-regular native sampling.  The fitted power law slope is -1.4, which is consistent with 1/$f$ ``flicker" noise.}
+\end{figure}
+
+
+
+\section{Early Experiments}
+
+\begin{figure}
+  \centering
+  \subfloat[Early polychromatic beam profile experiment]{\label{fig:exp7}\includegraphics[width=0.45\textwidth]{dat07_wls_1}}
+  \subfloat[90$^\circ$ Rotated PbS detector]{\label{fig:rot_detect}\includegraphics[width=0.45\textwidth]{exp7_vs_ex8_norm}}
+  \caption[Rotating the PbS detector improved the angular resolution by a factor of 3]{ \emph{Left-} Experiment 7 polychromatic detector profiles.  These profiles were taken before we rotated the slit so its long axis was perpendicular to the direction of the angular scanning, and before improvements to the optical quality, particularly the focus.  \emph{Right-} Factor of 3 improvement in angular resolution from correct detector mounting. Experiment 7 and 8 detector profiles for $\lambda = 2.5 \; \mu$m.  Between experiment 7 and 8 I rotated the PbS detector so that the long axis of the photosensitive detector area was perpendicular to the axis of the swinging arm.  The detector area is 1 $\times$ 3 mm$^{2}$, so with our $f=$ 110 mm camera lens and PbS detector configuration we expect 1.8$^\circ$ and 0.6$^\circ$ field of view for experiments 7 and 8, respectively.  The measured FWHM of the PSFs for experiments 7 and 8 are 1.8$^\circ$ and 0.63$^\circ$.  Notice the sidelobes on experiment 8, these came from calibration problems, specifically a background scan was subtracted off of this scan, but the background scan was not taken with a dark aperture cover and so this PSF is really the difference of two PSFs.  Still the width of the feature is unaffected, and the improved spectral resolution from rotating is demonstrated.}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{question_mark.ps}
+  \end{center}
+  \caption[Factor of 50-100 improvement in signal from optical and electronic improvements]{Voltage as a function of wavelength for a 100 $\mu$m slit width, during experiments 1-5 and experiment 7$-$ experiments 1-5 are clustered below 1 mV, whereas experiment 7 is well above 10 mV.  The optical setup was unchanged during experiments 1-5.  I aborted experiment 6 because the scanning was goofed up.  Before experiment 7 I increased the on-detector gain setting by a factor of 5, maximized the signal by nulling the signal to 0 and then adding 90$^\circ$ of phase, increased the chopper frequency from 80 to 180 Hz, reset the lock-in amplifier pre- and post- measurement time-constant to steady the signal reported on the LCD display, fine adjusted the detector focus and height by comparison to the lock-in amplifier LCD display.  I also fine adjusted the exit-slit collimator lens, coarse-adjusted the input light source positioning on the lab jack, and triggered the TE cooler for the detector.  It is not clear if these last 3 changes had any effect, but all the changes combined to improve the signal by a factor of 50-100.  The beam profile also improved, although they are still not flat-topped.  See the figure of the beam profiles.}
+\end{figure}
+
+
+
+
+%------------------------------------------------------------------------------------------
+%Long Tables
+%------------------------------------------------------------------------------------------
+\input{gta_CA1_tab_exper_parms.tex}
+\input{gta_CA1_tab_experlog2.tex}
