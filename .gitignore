@@ -1,7 +1,6 @@
 .DS_store
 *.eps
 *.ps
-*.png
 *.pptx
 *.xlsx
 data/
