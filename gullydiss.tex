@@ -270,7 +270,12 @@ Dedicated to all my teachers.
 
 \begin{acknowledgments}		% Optional
 \index{Acknowledgments@\emph{Acknowledgments}}%
-MGS acknowledges support from the NASA Graduate Student Research Program (GSRP) Fellowship, grant NNX10AK82H.  Portions of this research were supported by NASA APRA grant NNX10AC68G and NSF ATI grant AST-0705064.  MGS acknowledges support from the University of Texas in the form of the Graduate Dean's Prestigious Fellowship.  Funding from the McDonald Observatory and the Department of Astronomy's Cox graduate student excellence funds have helped to support travel and other aspects of this research.
+MGS acknowledges support from the NASA Graduate Student Research Program (GSRP) Fellowship, grant NNX10AK82H.  Portions of this research were supported by NASA APRA grant NNX10AC68G, NASA ACT grant NNX12AC31G, and NSF ATI grant AST-0705064.  MGS acknowledges support from the University of Texas in the form of the Graduate Dean's Prestigious Fellowship.  Funding from the McDonald Observatory and the Department of Astronomy's Cox graduate student excellence funds have helped to support travel and other aspects of this research.
+
+Part of the research was carried out at the Jet Propulsion Laboratory, California Institute of Technology, under a contract with the National Aeronautics and Space Administration. 
+
+I would like to thank student colleages Dr. Jasmina Marsh, Dr. Casey Deen, Jared Rand, Amanda Turbyfill, Carleen Boyer, for direct involvement in portions of this work.
+
 \end{acknowledgments}
 
 
@@ -282,9 +287,12 @@ MGS acknowledges support from the NASA Graduate Student Research Program (GSRP) 
 \utabstract
 \index{Abstract}%
 \indent
-The following is more of a preamble than an abstract.
 
-This is where the abstract goes.
+\emph{ebeam abstract}
+Infrared spectrographs employing silicon immersion gratings can be significantly more compact than spectrographs using front-surface gratings.  The Si gratings can also offer continuous wavelength coverage at high spectral resolution.  The grooves in Si gratings are made with semiconductor lithography techniques, to date almost entirely using contact mask photolithography.  Planned near-infrared astronomical spectrographs require either finer groove pitches or higher positional accuracy than standard UV contact mask photolithography can reach.  A collaboration between the University of Texas at Austin Silicon Diffractive Optics Group and the Jet Propulsion Laboratry Microdevices Laboratory has experimented with direct writing silicon immersion grating grooves with electron beam lithography.  The patterning process involves depositing positive e-beam resist on 1 to 30 mm thick, 100 mm diameter monolithic crystalline silicon substrates.  We then use the facility JEOL 9300FS e-beam writer at JPL to produce the linear pattern that defines the gratings.
+
+There are three key challenges to produce high-performance e-beam written silicon immersion gratings.  (1) E-beam field and subfield stitching boundaries cause periodic cross-hatch structures along the grating grooves.   The structures manifest themselves as spectral and spatial dimension ghosts in the diffraction limited point spread function (PSF) of the diffraction grating.  In this paper, we show that the effects of e-beam field boundaries must be mitigated.  We have significantly reduced ghost power with only minor increases in write time by using four or more field sizes of less than 500 $\mu$m. (2) The finite e-beam stage drift and run-out error cause large-scale structure in the wavefront error.  We deal with this problem by applying a mark detection loop to check for and correct out minuscule stage drifts.  We measure the level and direction of stage drift and show that mark detection reduces peak-to-valley wavefront error by a factor of 5. (3) The serial write process for typical gratings yields write times of about 24 hours- this makes prototyping costly.  We discuss work with negative e-beam resist to reduce the fill factor of exposure, and therefore limit the exposure time.
+We also discuss the tradeoffs of long write-time serial write processes like e-beam with UV photomask lithography.  We show the results of experiments on small pattern size prototypes on silicon wafers.  Current prototypes now exceed 30 dB of suppression on spectral and spatial dimension ghosts compared to monochromatic spectral purity measurements of the backside of Si echelle gratings in reflection at 632 nm.  We perform interferometry at 632 nm in reflection with a 25 mm circular beam on a grating with a blaze angle of 71.6$^\circ$.  The measured wavefront error is 0.09 waves peak to valley.
 
 \tableofcontents   % Table of Contents will be automatically
                    % generated and placed here.
@@ -313,21 +321,7 @@ This is where the abstract goes.
 %\include{chIshell/chapter-ishellgratings}
 %\include{chFabryPerot/chapter-fabryperot}
 
-%\include{chapter-BDdisks}
-
-%\include{chapter-IMACS}
-
-%\include{chfab/chapter-immersionfab}
-
-%\include{chapter-immersionperf}
-
-%\include{chapter-VPH}
-
-%\include{chapter-makingbib}
-
-%\include{chapter-tables+figs}
-
-%\include{chapter-math}
+\include{chSPIE_2014_ebeam/SPIE_2014_ebeam}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

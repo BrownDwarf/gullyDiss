@@ -1,62 +1,11 @@
-%  The following commands have been added in the SPIE class 
-%  file (spie.cls) and will not be understood in other classes:
-%  \supit{}, \authorinfo{}, \skiplinehalf, \keywords{}
-%  The bibliography style file is called spiebib.bst, 
-%  which replaces the standard style unstr.bst.  
-\documentclass[]{spie}  %>>> use for US letter paper
-%%\documentclass[a4paper]{spie}  %>>> use this instead for A4 paper
-%%\documentclass[nocompress]{spie}  %>>> to avoid compression of citations
-%% \addtolength{\voffset}{9mm}   %>>> moves text field down
-%% \renewcommand{\baselinestretch}{1.65}   %>>> 1.65 for double spacing, 1.25 for 1.5 spacing 
-%  The following command loads a graphics package to include images 
-%  in the document. It may be necessary to specify a DVI driver option,
-%  e.g., [dvips], but that may be inappropriate for some LaTeX 
-%  installations. 
-\usepackage[]{graphicx}
-\usepackage{subfig}
-\usepackage{booktabs}
-\usepackage{multirow}
+%\usepackage[]{graphicx}
+%\usepackage{subfig}
+%\usepackage{booktabs}
+%\usepackage{multirow}
 
-\title{High Performance Si Immersion Gratings Patterned with Electron Beam Lithography} 
-
-%>>>> The author is responsible for formatting the 
-%  author list and their institutions.  Use  \skiplinehalf 
-%  to separate author list from addresses and between each address.
-%  The correspondence between each author and his/her address
-%  can be indicated with a superscript in italics, 
-%  which is easily obtained with \supit{}.
-
-\author{Michael A. Gully-Santiago\supit{a}, Daniel T. Jaffe\supit{a}, Cynthia B. Brooks\supit{a}, Daniel W. Wilson\supit{b}, Richard E. Muller\supit{b}
-\skiplinehalf
-\supit{a}University of Texas at Austin Department of Astronomy, 2515 Speedway St, Austin, Texas, USA; 
-\skiplinehalf 
-\supit{b}Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, California, USA 91109-8099
-}
+\chapter{High Performance Si Immersion Gratings Patterned with Electron Beam Lithography} 
 
 
-\authorinfo{Further author information: (Send correspondence to M.G.S)\\M.G.S: E-mail: gully@astro.as.utexas.edu}
-
-%>>>> uncomment following for page numbers
-% \pagestyle{plain}    
-%>>>> uncomment following to start page numbering at 301 
-%\setcounter{page}{301}  
-
-\begin{document} 
-  \maketitle 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{abstract}
-Infrared spectrographs employing silicon immersion gratings can be significantly more compact than spectrographs using front-surface gratings.  The Si gratings can also offer continuous wavelength coverage at high spectral resolution.  The grooves in Si gratings are made with semiconductor lithography techniques, to date almost entirely using contact mask photolithography.  Planned near-infrared astronomical spectrographs require either finer groove pitches or higher positional accuracy than standard UV contact mask photolithography can reach.  A collaboration between the University of Texas at Austin Silicon Diffractive Optics Group and the Jet Propulsion Laboratry Microdevices Laboratory has experimented with direct writing silicon immersion grating grooves with electron beam lithography.  The patterning process involves depositing positive e-beam resist on 1 to 30 mm thick, 100 mm diameter monolithic crystalline silicon substrates.  We then use the facility JEOL 9300FS e-beam writer at JPL to produce the linear pattern that defines the gratings.
-
-There are three key challenges to produce high-performance e-beam written silicon immersion gratings.  (1) E-beam field and subfield stitching boundaries cause periodic cross-hatch structures along the grating grooves.   The structures manifest themselves as spectral and spatial dimension ghosts in the diffraction limited point spread function (PSF) of the diffraction grating.  In this paper, we show that the effects of e-beam field boundaries must be mitigated.  We have significantly reduced ghost power with only minor increases in write time by using four or more field sizes of less than 500 $\mu$m. (2) The finite e-beam stage drift and run-out error cause large-scale structure in the wavefront error.  We deal with this problem by applying a mark detection loop to check for and correct out minuscule stage drifts.  We measure the level and direction of stage drift and show that mark detection reduces peak-to-valley wavefront error by a factor of 5. (3) The serial write process for typical gratings yields write times of about 24 hours- this makes prototyping costly.  We discuss work with negative e-beam resist to reduce the fill factor of exposure, and therefore limit the exposure time.
-We also discuss the tradeoffs of long write-time serial write processes like e-beam with UV photomask lithography.  We show the results of experiments on small pattern size prototypes on silicon wafers.  Current prototypes now exceed 30 dB of suppression on spectral and spatial dimension ghosts compared to monochromatic spectral purity measurements of the backside of Si echelle gratings in reflection at 632 nm.  We perform interferometry at 632 nm in reflection with a 25 mm circular beam on a grating with a blaze angle of 71.6$^\circ$.  The measured wavefront error is 0.09 waves peak to valley.
-\end{abstract}
-
-%>>>> Include a list of keywords after the abstract 
-
-\keywords{Gratings, Metrology, Electron Beam, Lithography, Optical devices}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{INTRODUCTION}
 \label{sec:intro}  % \label{} allows reference to this section
 
@@ -116,7 +65,7 @@ E-beam patterning takes place within a hierarchy of increasing scale-sizes.  The
 \begin{figure}
 \begin{center}
  \begin{tabular}{c}
-    \includegraphics[width=0.8\textwidth]{figs/Field_sizes_cascade_02.png}
+    \includegraphics[width=0.8\textwidth]{chSPIE_2014_ebeam/figs/Field_sizes_cascade_02.png}
    \end{tabular}
   \end{center}
   \caption[e-beam Hierarchy]{\label{fig:Hierarchy} Hierarchy of e-beam pattern scale sizes- in the left panel the grooves are black and the fields are thin blue lines, the middle inset shows subfields, and the right inset shows spots at a regular step spacing, though the spots are not to scale.  Spot sizes are typically about 2-3 times their spacing.}
@@ -185,7 +134,7 @@ The choice of field size is multifaceted.  Field size choice is one of the key s
 \begin{figure}
 \begin{center}
  \begin{tabular}{c}
-    \includegraphics[width=0.96\textwidth]{figs/subfields_TJ04_Zeiss.pdf}
+    \includegraphics[width=0.96\textwidth]{chSPIE_2014_ebeam/figs/subfields_TJ04_Zeiss.pdf}
    \end{tabular}
   \end{center}
   \caption[TJ04 under Zeiss]{\label{fig:TJ04Zeiss} Subfield and field boundaries directly perceptible in optical microscopy of the e-beam resist on an intentionally underexposed sample, TJ04.  The groove pitch for this sample is 100 $\mu$m, with a 75 $\mu$m written linewidth.  The blue area is the linewidth portion of the grating which has e-beam resist already exposed to e-beam.  The orange line is the groove top, where the e-beam resist was unexposed and would have served as the wet etch dam, had the linewidth actually developed out.  The minute color differences within the exposed linewidth are attributable to tiny thickness differences of the resist, which originate from tiny differences in delivered e-beam dose.  The cylindrically symmetric color difference of teal to dark blue is attributable to the proximity effect as described elsewhere\cite{2005SPIE.5720...68W}.  The tiny boxes are subfields, which are only perceptible due to subtle subfield stitching errors.  Some subfields are more errant than others.  The thick horizontal stripe is a portion of a much larger field boundary, perceptible only because of main-field deflector stitching boundaries as discussed in the text.}
@@ -213,7 +162,7 @@ The field size is only a few times larger than our typical coarse echelle gratin
 \begin{figure}
 \begin{center}
  \begin{tabular}{c}
-    \includegraphics[width=0.6\textwidth]{figs/Field_stitching_errors_alt2.pdf}
+    \includegraphics[width=0.6\textwidth]{chSPIE_2014_ebeam/figs/Field_stitching_errors_alt2.pdf}
    \end{tabular}
   \end{center}
   \caption[Field Stitching Error Cartoon]{\label{fig:FieldCartoon} An exaggerated cartoon to demonstrate the repetitive nature of field stitching.  A typical field size is about 300-500 $\mu$m on a side, and typical groove periods, $\sigma$, are about 20-100 $\mu$m (50-10 lines/mm groove frequencies).  Here we show 5 grooves per field.  The distortion shown in the cartoon is highly exaggerated, and in reality the calibration is much, much better than depicted.  The center positions in the distorted fields are distributed around the target, demonstrating field stitching errors.  The actual morphology of the distortion is not well characterized and should be mostly corrected by the 9300FS dynamic distortion correction system.  We have depicted a pincushion shape, though the realized morphology could be more like barrel distortion or a parallelogram.  The fields could also be perfectly square and simply misplaced in their center positions, still causing errors.  The details of the morphology give rise to differing relative levels of harmonics, in a Fourier sense.  To put the scale in perspective, we coarsely estimate the repetitive position error amplitude A (cf. eq. \ref{eqn:Periodic}) as about 5-50 nm from experiments on e-beam wafers.  Compare this minuscule position error with the $\sim500 \; \mu$m field size, to see that the fractional position error is 1 part in $10^4$ or better.}
@@ -246,7 +195,7 @@ The centroiding \emph{DRIFT} process can be automatically repeated on a desired 
 \begin{figure}
 \begin{center}
  \begin{tabular}{c}
-    \includegraphics[width=0.4\textwidth]{figs/E12_drift_ebeam.png}
+    \includegraphics[width=0.4\textwidth]{chSPIE_2014_ebeam/figs/E12_drift_ebeam.png}
    \end{tabular}
   \end{center}
   \caption[Drift amplitude]{\label{fig:ebeamDrift} The reconstructed drift of the JEOL 9300FS e-beam stage during the patterning of sample E12.  The write time was 20.9 hours, with drift samples every 10 minutes.  The $x$ and $y$ components are separated and plotted as a function of time.  The top curve is the $y$ drift.  The curves begin at 0 at time zero, and show a range of motion of $\Delta x = $ 206 nm and $\Delta y = $ 341 nm.  This amplitude of drift would have been catastrophic for a grating which has line edge specifications of $\lambda/10 \sim 60 $ nm for diffraction limited performance in $J-$ band.  The JEOL9300FS command \emph{DRIFT} automatically corrects out this drift, so the maximum realized drift is merely the minuscule difference that occurs over the 10 minute interval between corrections.  Figures \ref{fig:E12igram} and \ref{fig:E09igram} show a direct comparison of prototype gratings patterned with and without drift correction.}
@@ -284,7 +233,7 @@ In Figure \ref{fig:GhostLevelFig} we show measurements of inter order ghosts for
 \begin{figure}
 \begin{center}
  \begin{tabular}{c}
-    \includegraphics[width=0.8\textwidth]{figs/TJ04_ghosts_pretty_alt.pdf}
+    \includegraphics[width=0.8\textwidth]{chSPIE_2014_ebeam/figs/TJ04_ghosts_pretty_alt.pdf}
    \end{tabular}
   \end{center}
   \caption[Ghost level measurements]{\label{fig:GhostLevelFig} Measurements of the levels of inter-order ghosts for different trial runs of the writing process with internal designations TJ03 and TJ04.  The levels are normalized to the brightest order.  A full order is shown, with the $x-$axis units normalized to an order spacing.  The grating sub-areas of TJ04 are described in Table \ref{tab:TJ04details}.  Some ghosts are not detected, noted as ND.  The non-detections are due to instrumental limitations or genuine absence of ghosts.  The key idea here is that field size choice determines the number of- and to some extent the intensity of- inter order ghosts.  The absolute best patterning strategy is to set your $x-$field size equal to your groove pitch $\sigma$, as in TJ04A, which has no inter order ghosts.  All other patterns have a finite, albeit low, intensity ghost.  }
@@ -295,9 +244,9 @@ In Figure \ref{fig:GhostLevelFig} we show measurements of inter order ghosts for
 In Figures \ref{fig:E09igram} and \ref{fig:E12igram} we show the dramatic impact of drift correction on the performance of our Si gratings.  The stark difference in final wavefront error of the complete grating with drift correction and without drift correction is the ``smoking gun'' that the e-beam must have drift correction enabled to achieve high performance diffraction limited performance.  At the time of writing we have produced and tested another grating, G07, with even higher performance than E12.  Specifically, we perform interferometry at 632 nm in reflection with a 25 mm circular beam on a grating with a blaze angle of 71.6$^\circ$.  The measured wavefront error is $<0.10$ waves peak to valley for G07.
 
 \begin{figure}
-   \subfloat[E12 Interferogram]{\label{fig:E12igram}\includegraphics[height=5cm]{figs/E12_fig_scl2.pdf}}
+   \subfloat[E12 Interferogram]{\label{fig:E12igram}\includegraphics[height=5cm]{chSPIE_2014_ebeam/figs/E12_fig_scl2.pdf}}
    \newline
-  \subfloat[E09 Interferogram]{\label{fig:E09igram}\includegraphics[height=5cm]{figs/E09_fig_scl2.pdf}}
+  \subfloat[E09 Interferogram]{\label{fig:E09igram}\includegraphics[height=5cm]{chSPIE_2014_ebeam/figs/E09_fig_scl2.pdf}}
   \caption{Comparison of immersion grating surfaces on samples E09 and E12 measured with $\lambda = 632.8 $ nm interferometry.  These are both e-beam produced immersion grating surface prototypes.  The color scale is reported in fractions of waves of surface deviation.  The patterns on E09 and E12 are identical: $\sigma = $ 27.36 $\mu$m (about equal to 36.55 lines / mm), with a 9.96 $\mu$m groove top.  The groove top is not shadowed in these measurements which are taken in reflection in air, but we assume the groove tops have negligible impact on the measured interferometry.  The interferometry is performed with a 25 mm circular beam, which is projected over an 80 mm $\times$ 25 mm ellipse at the R3 echelle blaze angle, $\delta = 71.5 ^\circ$.  The left panel is the measured interferometry.  The middle panel is a decomposition into the first $\sim 80$ Zernike terms.  The right panel is the residual.  E09 was written on May 4, 2011, E12 was written September 1, 2011.  The only difference between the samples is that E12 was written with \emph{DRIFT} and \emph{CURRENT} check protocols with the JEOL e-beam writing software.  E09 was written without \emph{DRIFT} and \emph{CURRENT} check protocols.  The outcome is dramatic- E12 has $\sim 4$ times lower surface deformation than E09.  Note that the vertical color bars are on the same scale to ease visual comparison.}
   \label{fig:igrams}
 \end{figure}
@@ -320,12 +269,3 @@ In principle these gains from negative resist could be extended to immersion ech
 
 \section{Conclusions}
 Electron beam lithography is now the highest precision technique for producing diffraction limited silicon immersion gratings.  The one performance disadvantage is the high level Rowland ghosts attributable to field stitching.  These errors have been mitigated by breaking up the field sizes into several different field sizes, distributing the power among more inter-order ghosts of lower individual power.  We can achieve 10$^{-3}$ suppression with this multi-field technique.  Ultimately science requirements will have to drive the performance demand of immersion gratings to inform how low to push the inter-order ghost level.  The optimal sizes for e-beam fields, subfields, spots, and steps are nuanced- we lay out rules that avoid repetitive errors.  One key innovation is the e-beam stage drift characterization and compensation.  The correction of stage drift resulted in a $>4\times$ reduction in peak to valley wavefront error in an R3 immersion echelle grating.  Future experiments with negative tone resists will probably decrease write time and increase performance.
-
-\acknowledgments
- 
-Part of the research was carried out at the Jet Propulsion Laboratory, California Institute of Technology, under a contract with the National Aeronautics and Space Administration.  We directly acknowledge support from NASA APRA grant NNX10AC68G and NASA ACT grant NNX12AC31G.  MGS was supported by the NASA Graduate Student Researchers Program (GSRP) grant number NNX10AK82H.  We recognize the contribution of Amanda Turbyfill in metrology of part G07 and other recent grating prototypes.
-
-\bibliography{SPIE_2014_ebeam}   %>>>> bibliography data in report.bib
-\bibliographystyle{spiebib}   %>>>> makes bibtex use spiebib.bst
-
-\end{document} 
