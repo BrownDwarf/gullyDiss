@@ -23,7 +23,7 @@ This project does not yet adhere to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 - Replace figs/ with chapter/figs to get the document to compile (for SPIE 2010, 2012, and 2014)
-- Remove white space in any \cite{ a, b}, otherwise it won't compile (for SPIE 2010, 2012, and 2014)
+- Remove white space in any \cite{ a, b}, otherwise it won't compile (for SPIE 2010, 2012, and 2014, bonded Si paper)
 - Append directory paths in front of figure filenames for the SPIE 2012 chapter
 - The bonded Si Gaps chapter subfigures commands were not supported- changed to subfloat
 
