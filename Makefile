@@ -26,4 +26,5 @@ all: gullydiss.pdf
 	rm -rf chIshell/*.aux
 	rm -rf chFabryPerot/*.aux
 	rm -rf chSPIE_2014_ebeam/*.aux
+	rm -rf chSPIE_2012_CA1a/*.aux
 	rm -rf appendices/*.aux

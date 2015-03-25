@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "cleaning up"
+rm gullydiss.pdf
 rm -rf *Notes.bib
 rm -rf *.bbl
 rm -rf *.log
