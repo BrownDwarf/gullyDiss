@@ -7,6 +7,7 @@ This project does not yet adhere to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Remove the existing proto-chapters
 - Name of SPIE 2014 ebeam chapter is now chapter-2014-ebeam
+- Name of SPIE 2012 ebeam chapter is now chapter-2012-CA1
 
 ### Added
 - Keep a CHANGELOG
