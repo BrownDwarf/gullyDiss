@@ -6,7 +6,7 @@
 \label{sec:intro}  % \label{} allows reference to this section
 
 
-We have delivered a set of silicon grisms for use as dispersive elements in the long wavelength channel of the near-infrared camera (NIRCam)\cite{Horner04, Greene10} on the James Webb Space Telescope (JWST)\cite{Sabelhaus04}.  The primary function of these grisms is to produce spectra for dispersed fringe sensing which will permit elimination of piston errors as the telescope is aligned to its design figure\cite{Shi08}. The NIRCam-based dispersive fringe sensing system, by virtue of its long operating wavelength, has a significantly larger capture range than the equivalent optical system.  The grisms also offer the possibility of astronomical observations that can make use of NIRCam's ability to conduct slitless spectroscopy at 3-5 $\mu$m over a large field.  One important application is infrared spectroscopy of transiting planets where the absence of a slit eliminates the problem of time-variable slit losses\cite{Greene07}.  Science operations in the NIRCam grism mode will be supported by the JWST data planning and data taking software.
+We have delivered a set of silicon grisms for use as dispersive elements in the long wavelength channel of the near-infrared camera (NIRCam)\cite{Horner04,Greene10} on the James Webb Space Telescope (JWST)\cite{Sabelhaus04}.  The primary function of these grisms is to produce spectra for dispersed fringe sensing which will permit elimination of piston errors as the telescope is aligned to its design figure\cite{Shi08}. The NIRCam-based dispersive fringe sensing system, by virtue of its long operating wavelength, has a significantly larger capture range than the equivalent optical system.  The grisms also offer the possibility of astronomical observations that can make use of NIRCam's ability to conduct slitless spectroscopy at 3-5 $\mu$m over a large field.  One important application is infrared spectroscopy of transiting planets where the absence of a slit eliminates the problem of time-variable slit losses\cite{Greene07}.  Science operations in the NIRCam grism mode will be supported by the JWST data planning and data taking software.
 
 The fabrication of silicon grisms was an effective solution to the problems of maximizing resolving power in a predetermined and limited space and of providing optically efficient dispersers in a space-qualifiable material.  Jaffe et al. (2008)\cite{Jaffe08} discuss the fabrication of the NIRCam devices and the optical quality of the grating surfaces.  The performance significantly exceeds the requirements for diffraction-limited spectroscopy at 3-5 $\mu$m, as evinced by front-surface interferometry and monochromatic PSF measurements at optical wavelengths.  Figure 1 shows a photograph of one of the six parts (four flight parts and two flight spares) delivered by the UT grating group.  Each part has a diameter of 48 mm (usable diameter 42mm).  Blazed at 5.75 degrees, these parts provide a resolving power $R=\lambda/\Delta \lambda \sim 1800$.  The flight grisms are blazed at 3.7 $\mu$m in first order and light at this wavelength is undeviated as it passes through the system.  The interferometric measurements presented in our previous paper showed that the errors in the grating surface were extremely small, less than $\lambda$/100 peak to valley at the blaze wavelength, offering the promise of excellent throughput and superb spectral purity.  These measurements do not, however, tell the whole performance story:  The completed flight parts have flat entrance faces that can also contribute to phase errors.  Etched silicon gratings have a groove vertex angle of $70\,^{\circ}{\rm}$ rather than the $90\,^{\circ}{\rm}$ that ruled gratings have.  The manufacturing process produces small flat ``dams" between each groove to serve as etch stops.  The acute angle and/or these dams leave a portion of the grooved surface unusable. Small-scale surface roughness in the grooves themselves can lead to diffuse scattered light that is hard to measure directly. Finally, there are reflective losses at the vacuum/silicon interfaces.   In this paper, we give a more complete discussion of these sources of loss and of how they contribute to the measured performance of the devices.
 
@@ -15,7 +15,7 @@ The fabrication of silicon grisms was an effective solution to the problems of m
    \begin{figure}
    \begin{center}
    \begin{tabular}{c}
-   \includegraphics[height=9cm]{A6K_scale.png}
+   \includegraphics[height=9cm]{chSPIE_2010_JWST/figs/A6K_scale.png}
    \end{tabular}
    \end{center}
    \caption[JWST grism [pictures] 
@@ -30,14 +30,14 @@ Because the parts are physically larger than the optically active area, it was p
    \begin{figure}
    \begin{center}
    \begin{tabular}{c}
-   \includegraphics[height=7cm]{A7I_entrance_uncoat.png}
+   \includegraphics[height=7cm]{chSPIE_2010_JWST/figs/A7I_entrance_uncoat.png}
    \end{tabular}
    \end{center}
    \caption[A7-I interferogram] {\label{fig:im2}  Interferogram of the polished entrance surface of JWST trial grism ``A7-I".  The interferogram was taken prior to the application of an antireflection coating. }
    \end{figure} 
 
 \subsection{Groove Geometry}
-We form the grooves in the monolithic substrates from which we fabricate the grisms by taking advantage of the significantly different rates at which certain chemicals etch through the different planes in crystalline structure\cite{Marsh07, Tsang1975}.  In our process a solution of KOH etches approximately 60 times faster across the 100 plane than across the 111 plane and a suitably oriented mask of stripes will form triangular grooves at the intersection of 111 planes.  The intersecting planes form an angle of $71\,^{\circ}{\rm}$.  For blaze angles greater than $8\,^{\circ}{\rm}$, this acute angle will result in shadowing of one groove by another in transmission with the amount of shadowing a function of the blaze angle (see Figure 6 of Mar et al. (2006)\cite{Mar06}).  For small prism opening angles, it is not the acute groove vertex but rather the small dams along the grating surface that lead to groove filling factors less than one.  We need the dams to serve as etch stops between the grooves.  For the JWST gratings, the grating constant was 15.36 $\mu$m and the final dam width was about 1.5 $\mu$m.  At the $6.16 \,^{\circ}{\rm}$ opening angle of the JWST prisms, the dams are responsible for the filling factor loss.  The geometric blockage whether by the dams or by the lip of the neighboring acute groove leads to loss in two ways:  direct blockage of the light and, via Babinet's principle, diffraction of an equal amount of light into unwanted orders.  For the geometric blockage of $\sim10\%$ in the JWST grisms, the maximum theoretical transmission is then 0.81.  
+We form the grooves in the monolithic substrates from which we fabricate the grisms by taking advantage of the significantly different rates at which certain chemicals etch through the different planes in crystalline structure\cite{Marsh07,Tsang1975}.  In our process a solution of KOH etches approximately 60 times faster across the 100 plane than across the 111 plane and a suitably oriented mask of stripes will form triangular grooves at the intersection of 111 planes.  The intersecting planes form an angle of $71\,^{\circ}{\rm}$.  For blaze angles greater than $8\,^{\circ}{\rm}$, this acute angle will result in shadowing of one groove by another in transmission with the amount of shadowing a function of the blaze angle (see Figure 6 of Mar et al. (2006)\cite{Mar06}).  For small prism opening angles, it is not the acute groove vertex but rather the small dams along the grating surface that lead to groove filling factors less than one.  We need the dams to serve as etch stops between the grooves.  For the JWST gratings, the grating constant was 15.36 $\mu$m and the final dam width was about 1.5 $\mu$m.  At the $6.16 \,^{\circ}{\rm}$ opening angle of the JWST prisms, the dams are responsible for the filling factor loss.  The geometric blockage whether by the dams or by the lip of the neighboring acute groove leads to loss in two ways:  direct blockage of the light and, via Babinet's principle, diffraction of an equal amount of light into unwanted orders.  For the geometric blockage of $\sim10\%$ in the JWST grisms, the maximum theoretical transmission is then 0.81.  
 
 \subsection{Microscopic Surface Roughness}
 While the etching process results in remarkably flat grooves, point defects in the structure of the crystalline silicon grating substrates can lead to local pits and hillocks, that is, to roughness on various scales, as the anisotropic etching produces the blazed grooves.  The consequences of this roughness are difficult to measure directly as the scattered light produced as a result of it is generally on large angular scales with low peak amplitudes.  Instead, the best ways to evaluate this possible loss mechanism is to examine the roughness of the surfaces directly.  We have done this for an earlier set of grating surfaces using atomic force microscopy\cite{Marsh07} and concluded that the integrated diffuse scattered light due to small-scale roughness is 0.005\% for a Si grism in operation at 3.7$\mu$m.  We have also used interferometric metrology of roughness within individual grooves in the more demanding context of immersion grating production (see Wang et al. in this volume\cite{Wang10}) and find that the loss should be about 0.006\%  if such surfaces are used in transmission.
@@ -50,7 +50,7 @@ The large refractive index ($\sim 3.41$ in the near-IR) that gives silicon grism
    \begin{figure}
    \begin{center}
    \begin{tabular}{c}
-   \includegraphics[height=9cm]{A6I_transmission_nt2}
+   \includegraphics[height=9cm]{chSPIE_2010_JWST/figs/A6I_transmission_nt2}
    \end{tabular}
    \end{center}
    \caption[JWST grism transmission] {\label{fig:im3}  Measurement of throughput as a function of wavelength for JWST flight part ``A6-I".  The combination of the geometric blockage by the groove dams and the Fresnel losses results in a theoretical maximum efficiency of $\sim 0.41$ on the blaze.  The plot shows the power in the fifth order and in adjacent orders.} 
@@ -65,7 +65,7 @@ In a diffraction limited system, however,  one needs to be concerned about wheth
    \begin{figure}
    \begin{center}
    \begin{tabular}{c}
-   \includegraphics[height=10cm]{ARcoat_trans_siww}
+   \includegraphics[height=10cm]{chSPIE_2010_JWST/figs/ARcoat_trans_siww}
    \end{tabular}
    \end{center}
    \caption[Transmission of single side AR coated silicon wafer witness] {\label{fig:im4}  IR transmission of an optically flat thin silicon wafer witness that was AR coated on a single side.  The wafer does not have grooves on it, and therefore does not have geometric losses.  Since the uncoated air-Si interface suffers 30\% Fresnel loss, the AR coated interface must exhibit close to 100\% transmission between 2 and 5 $\mu$m.  The AR coating is ineffective shortward of 2 $\mu$m, and Si does not transmit short of 1.15$\mu$m.  Figure courtesy of II-VI Inc.} 
@@ -80,13 +80,13 @@ In the course of the development work for the JWST grisms, we were able to test 
    \begin{figure}
    \begin{minipage}[b]{0.5\linewidth} % A minipage that covers half the page
    \begin{tabular}{c}
-   \includegraphics[width=\textwidth]{A7I_uncoated_trans.pdf}
+   \includegraphics[width=\textwidth]{chSPIE_2010_JWST/figs/A7I_uncoated_trans.pdf}
    \end{tabular}
    \end{minipage}
    \hspace{0.01cm} % To get a little bit of space between the figures
 \begin{minipage}[b]{0.5\linewidth}
    \begin{tabular}{c}
-   \includegraphics[width=\textwidth]{A7I_coated_2.pdf}
+   \includegraphics[width=\textwidth]{chSPIE_2010_JWST/figs/A7I_coated_2.pdf}
    \end{tabular}
    \end{minipage}
    \caption[JWST grism transmission] {\label{fig:im5}  Transmission of trial part A7-I.  The interferograms were taken with the surfaces (left) uncoated and (right) coated on both entrance and grating surfaces.  The ineffectiveness of the AR coating shortward of 2.0 $\mu$m (cf. Figure 4) stifled a direct comparison of transmission at the same wavelengths before and after coating.  The poor transmission below 2.0 $\mu$m is apparent in the right panel, since the $4^{th}$ order curve is suppressed before it reaches its blaze peak near 1.8 $\mu$m.  A similar measurement at 3.1-4.0 $\mu$m shows 75\% peak efficiency for the double-side coated grism.}
@@ -104,7 +104,7 @@ Figure 6 shows a comparison of the 633 nm Littrow interferogram of the grooved s
    \begin{minipage}[b]{0.5\linewidth} % A minipage that covers half the page
    \begin{center}
    \begin{tabular}{c}
-   \includegraphics[width=\textwidth]{A7I_interf_31mm_grat_uncoat.png}
+   \includegraphics[width=\textwidth]{chSPIE_2010_JWST/figs/A7I_interf_31mm_grat_uncoat.png}
    \end{tabular}
    \end{center}
    \end{minipage}
@@ -112,7 +112,7 @@ Figure 6 shows a comparison of the 633 nm Littrow interferogram of the grooved s
 \begin{minipage}[b]{0.5\linewidth}
 \begin{center}
    \begin{tabular}{c}
-   \includegraphics[width=\textwidth]{A7I_post_coat.png}
+   \includegraphics[width=\textwidth]{chSPIE_2010_JWST/figs/A7I_post_coat.png}
    \end{tabular}
    \end{center}
    \end{minipage}

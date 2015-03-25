@@ -20,8 +20,8 @@ This project does not yet adhere to [Semantic Versioning](http://semver.org/).
 - SPIE 2010 JWST references to the bibliography
 
 ### Fixed
-- Replace figs/ with chapter/figs to get the document to compile
-- Remove white space in any \cite{ a, b}, otherwise it won't compile (for SPIE 2012, and 2014)
+- Replace figs/ with chapter/figs to get the document to compile (for SPIE 2010, 2012, and 2014)
+- Remove white space in any \cite{ a, b}, otherwise it won't compile (for SPIE 2010, 2012, and 2014)
 - Append directory paths in front of figure filenames for the SPIE 2012 chapter
 
 ## [Monday March 24, 2015][commit 5c98087]
