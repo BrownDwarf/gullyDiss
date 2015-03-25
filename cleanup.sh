@@ -17,4 +17,7 @@ rm -rf chGratingProcess/*.aux
 rm -rf chIshell/*.aux
 rm -rf chFabryPerot/*.aux
 rm -rf chSPIE_2014_ebeam/*.aux
+rm -rf chSPIE_2012_CA1/*.aux
+rm -rf chSPIE_2010_JWST/*.aux
+rm -rf chSiGaps/*.aux
 rm -rf appendices/*.aux
