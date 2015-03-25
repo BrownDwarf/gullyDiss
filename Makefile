@@ -25,4 +25,5 @@ all: gullydiss.pdf
 	rm -rf chGratingProcess/*.aux
 	rm -rf chIshell/*.aux
 	rm -rf chFabryPerot/*.aux
+	rm -rf chSPIE_2014_ebeam/*.aux
 	rm -rf appendices/*.aux
