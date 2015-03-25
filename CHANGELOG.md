@@ -26,5 +26,6 @@ This project does not yet adhere to [Semantic Versioning](http://semver.org/).
 - Remove white space in any \cite{ a, b}, otherwise it won't compile (for SPIE 2010, 2012, and 2014, bonded Si paper)
 - Append directory paths in front of figure filenames for the SPIE 2012 chapter
 - The bonded Si Gaps chapter subfigures commands were not supported- changed to subfloat
+- Manually remove duplicate entries in the bib file, and rename citation keywords.
 
 ## [Monday March 24, 2015][commit 5c98087]
