@@ -1,70 +1,8 @@
-%  article.tex (Version 3.3, released 19 January 2008)
-%  Article to demonstrate format for SPIE Proceedings
-%  Special instructions are included in this file after the
-%  symbol %>>>>
-%  Numerous commands are commented out, but included to show how
-%  to effect various options, e.g., to print page numbers, etc.
-%  This LaTeX source file is composed for LaTeX2e.
-
-%  The following commands have been added in the SPIE class 
-%  file (spie.cls) and will not be understood in other classes:
-%  \supit{}, \authorinfo{}, \skiplinehalf, \keywords{}
-%  The bibliography style file is called spiebib.bst, 
-%  which replaces the standard style unstr.bst.  
-
-\documentclass[]{spie}  %>>> use for US letter paper
-%%\documentclass[a4paper]{spie}  %>>> use this instead for A4 paper
-%%\documentclass[nocompress]{spie}  %>>> to avoid compression of citations
-%% \addtolength{\voffset}{9mm}   %>>> moves text field down
-%% \renewcommand{\baselinestretch}{1.65}   %>>> 1.65 for double spacing, 1.25 for 1.5 spacing 
-%  The following command loads a graphics package to include images 
-%  in the document. It may be necessary to specify a DVI driver option,
-%  e.g., [dvips], but that may be inappropriate for some LaTeX 
-%  installations. 
-%\usepackage[]{graphics}
-\usepackage[]{graphicx}
-\usepackage[]{amsmath}
-
 \newcommand{\bm}[1]{\boldsymbol{#1}}
 
+\chapter{High Performance Silicon Grisms for 1.2-8.0 {\LARGE$\bm{\mu}$}m: Detailed Results from the JWST-NIRCam Devices} 
 
-\title{High Performance Silicon Grisms for 1.2-8.0 {\LARGE$\bm{\mu}$}m: Detailed Results from the JWST-NIRCam Devices} 
-
-
-\author{M. Gully-Santiago\supit{a}, W. Wang\supit{a}, C. Deen\supit{a}, D. Kelly\supit{b}, T.P. Greene\supit{c}, J. Bacon\supit{d}, and D.T. Jaffe\supit{a}
-\skiplinehalf
-\supit{a}University of Texas at Austin Department of Astronomy, Austin, TX, USA \\
-\supit{b}University of Arizona, Department of Astronomy, Tucson, AZ, USA \\
-\supit{c}NASA Ames Research Center, Moffett Field, CA, USA \\
-\supit{d}II-VI Incorporated, Saxonburg, PA, USA
-}
-
-%>>>> Further information about the authors, other than their 
-%  institution and addresses, should be included as a footnote, 
-%  which is facilitated by the \authorinfo{} command.
-
-\authorinfo{Send correspondence to M.G.S\\gully@astro.as.utexas.edu}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%>>>> uncomment following for page numbers
-% \pagestyle{plain}    
-%>>>> uncomment following to start page numbering at 301 
-%\setcounter{page}{301} 
- 
-  \begin{document} 
-  \maketitle 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{abstract}
-We have recently completed a set of silicon grisms for JWST-NIRCam.  These devices have exquisite optical characteristics:  phase surfaces flat to $\lambda$/100 peak to valley at the blaze wavlength, diffraction-limited PSFÕs down to $10^{-5}$ of the peak, low scattered light levels, and large resolving-power slit-width products for their width and thickness.   The one possible drawback to these devices is the large Fresnel loss caused by the large refractive index of Si.  We report here on throughput and phase-surface measurements for a sample grating with a high performance antireflection coating on both the flat and grooved surfaces. These results indicate that we can achieve very high on-blaze efficiencies.  The high throughput should make Si grisms an attractive dispersive element for moderate resolution IR spectroscopy in both ground and space based instruments throughout the 1.2-8 $\mu$m spectral region.
-\end{abstract}
-
-%>>>> Include a list of keywords after the abstract 
-
-\keywords{Ground based astronomy, diffraction gratings, optical materials}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{INTRODUCTION}
+\section{Introduction}
 \label{sec:intro}  % \label{} allows reference to this section
 
 
@@ -184,13 +122,3 @@ Figure 6 shows a comparison of the 633 nm Littrow interferogram of the grooved s
 
 \section{Conclusions}
 In summary, we have completed a set of six high performance silicon grisms for the NIRCam instrument on JWST.  The grisms are produced with precision photolithography and anisotropically etching the Si crystal plane.  By enumerating the loss mechanisms we saw that geometric and Fresnel losses limit the throughput of silicon grisms to about 41\%.  When the entrance and grating surfaces are coated with a broad band anti-reflection coating, Fresnel losses become negligibly small.  Measurements of a sample double side AR coated grism indicate on blaze throughput of about 75\%, marginally below the 81\% expected for purely geometric losses.  The grating performance was not significantly degraded by the multi-layer dielectric coating, as evinced by interferometry and optical reflection efficiency measurements.
-
-\acknowledgments   
- 
-Most of the work outlined here was carried out at the University of Texas under a contract from the University of Arizona.  The development work for the grisms was supported in part by NASA (grant number NNX07AV15H).  Analysis of the silicon antireflection coatings was supported in part by grant 0705064 from the National Science Foundation.  The authors wish to thank Gary Poczulp and the National Optical Astronomy Observatory for assistance in producing the interferograms presented in this paper.
-
-
-\bibliography{mgs_spie_2010_v1_0bib}   %>>>> bibliography data in report.bib
-\bibliographystyle{spiebib}   %>>>> makes bibtex use spiebib.bst
-
-\end{document} 

@@ -16,6 +16,8 @@ This project does not yet adhere to [Semantic Versioning](http://semver.org/).
 - Chapter listings to the README
 - SPIE 2012 CA1 chapter
 - SPIE 2012 CA1 references to the bibliography
+- SPIE 2010 JWST chapter
+- SPIE 2010 JWST references to the bibliography
 
 ### Fixed
 - Replace figs/ with chapter/figs to get the document to compile
