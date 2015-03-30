@@ -6,6 +6,7 @@ rm -rf *.bbl
 rm -rf *.log
 rm -rf *.blg
 rm -rf *.dvi
+rm -rf *.out
 rm -rf *.aux
 rm -rf *.toc
 rm -rf *.lof

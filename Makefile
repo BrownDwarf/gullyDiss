@@ -18,6 +18,7 @@ all: gullydiss.pdf
 	rm -rf *.aux
 	rm -rf *.toc
 	rm -rf *.lof
+	rm -rf *.out
 	rm -rf *.lot
 	rm -rf *.idx
 	rm -rf ch1/*.aux
