@@ -1,9 +1,8 @@
 \chapter{Optical characterization of gaps in directly bonded Si compound optics using infrared spectroscopy}
 
-
 \section{Introduction}
 
-Crystalline silicon is an excellent optical material for the infrared. Si has a high refractive index ($3.55-3.45$ from $\lambda = 1150-2500\;$nm at room temperature, \cite{2006SPIE.6273E..77F}) and superb transmission from slightly longer than the equivalent wavelength of its band gap ($\sim$1.15 $\mu$m) to about 6.5 $\mu$m \cite{PhysRev.108.268,PhysRev.78.178} and in the far-IR \cite{doi:10.1117/12.323764}.  It has adequate transmission  ($\alpha \sim 1$ cm$^{-1}$) for many purposes in the 18-30 $\mu$m region as well \cite{doi:10.1117/12.323764}.  There is an extensive industrial infrastructure for the production of ultrapure Si and for polishing and lithographic patterning and etching of optical parts.
+Crystalline silicon is an excellent optical material for the infrared. Si has a high refractive index ($3.55-3.45$ from $\lambda = 1150-2500\;$nm at room temperature) and superb transmission from slightly longer than the equivalent wavelength of its band gap ($\sim$1.15 $\mu$m) to about 6.5 $\mu$m \cite{PhysRev.108.268,PhysRev.78.178} and in the far-IR \cite{doi:10.1117/12.323764}.  It has adequate transmission  ($\alpha \sim 1$ cm$^{-1}$) for many purposes in the 18-30 $\mu$m region as well \cite{doi:10.1117/12.323764}.  There is an extensive industrial infrastructure for the production of ultrapure Si and for polishing and lithographic patterning and etching of optical parts.
 
 As with a number of glasses and crystalline optical materials, it is possible to form strong physical bonds between two planar or conformal silicon surfaces.  One advantage of this direct Si$-$Si bonding of macroscopic optical parts is that it facilitates the manufacture of complex optical subsystems, for example double-convex aspheres, combinations of lenses, prisms, and transmission gratings, and pairs of gratings oriented at right angles \cite{2012SPIE.8450E..2TV,2010SPIE.7739E.123G}.  A second important advantage is that a sufficiently close bond is optically lossless, an important consideration not only for its effect on throughput but also because it can eliminate concerns about optical ghosts.  The remaining advantages of bonding stem from various difficulties encountered in antireflection coating a high index material in the near and mid-infrared:  There is a limited choice of index-matching materials, in particular at longer wavelengths.  Systems often are used at cryogenic temperatures and considerations of differential thermal expansion, brittleness and hygroscopic properties can restrict the choice of coatings even further. It is hard to get good antireflection performance across broad spectral ranges and at a range of incidence angles.
 
@@ -35,7 +34,7 @@ Our measurement technique exploits the large Fresnel reflection \cite{2001opt4.b
 
 \begin{figure}[htbp]
 \includegraphics[width=0.95\columnwidth]{chSiGaps/figs/SiIndexAOmgsFinesseFig.pdf}
-\caption{Plot of refractive index, $n$, and coefficient of finesse, $F$, as a function of wavelength, $\lambda$.\label{figSiIndexFinesse} We computed the temperature dependent refractive index from the tabulations of \cite{2006SPIE.6273E..77F}.  The coefficient of finesse is defined in Equation \ref{eq:FabPerot}.}
+\caption[Si refractive index and Finesse as a function of wavelength]{Plot of refractive index, $n$, and coefficient of finesse, $F$, as a function of wavelength, $\lambda$.   We computed the temperature dependent refractive index from the tabulations of \cite{2006SPIE.6273E..77F}.  \label{figSiIndexFinesse}}
 \end{figure}
 
 We can treat a small Si$-$Si interface gap between two almost-bonded silicon parts as a low-Finesse Fabry-P\`{e}rot etalon\cite{2007fuph.book.....S}.  The key property of an etalon is that it has a cavity enclosed between two smooth and parallel reflective surfaces where the requirements for smoothness and parallelism depend on the reflective finesse of the cavity.  For the narrow air gaps we consider here and for the modest reflectivity of a Si-vacuum interface, most gaps at Si$-$Si bonds will form effective etalons over most of their area.  The transmission through a Fabry-P\`{e}rot depends on the wavelength of light, the reflectivity of the etalon sidewalls, and the size of the gap.  We compute the reflectivity for an Si$-$vacuum interface, which is a modest function of wavelength through the refractive index of Silicon, $n(\lambda, T)$ \cite{2006SPIE.6273E..77F}, as shown in Figure \ref{figSiIndexFinesse}.  We drop the subscripts on the refractive index $n(\lambda, T) \rightarrow n$ and the coefficient of finesse $F(\lambda, T) \rightarrow F$ for clarity.  The computation is simply Fresnel's law at normal incidence:
@@ -284,12 +283,12 @@ The elements of $\boldsymbol{S}$ and $\boldsymbol{M}$ are related to each other 
 The matrix for the silicon air gap is calculated in the following way.  We treat the air gap as a Fabry-P\`erot etalon.  We do not need to consider the microscopic coherent interactions with the etalon transmission, all of that information is encapsulated in these equations for a Fabry-P\`erot etalon model for the gap:
 
 \begin{eqnarray}
- \delta = \frac{2\pi}{\lambda}2d \label{eq:phase} \\
+ \delta = \frac{2\pi}{\lambda}2d \\
   F \equiv \frac{4R}{(1-R)^2} \\
  T_g = \frac{1}{1+F\sin^2(\delta/2)}  \label{eq:FabPerot}
 \end{eqnarray}
 
-with $\lambda$ the vacuum wavelength, $R$ the Fresnel reflection of silicon, and $F$ the coefficient of finesse.  The coefficient of finesse $F$ and the phase $\delta$ are the two parameters of the Fabry-P\`erot etalon.  The coefficient of Finesse encapsulates the Fresnel reflection and depends only on the Si refractive index which has only a small wavelength (and temperature) dependence.  The phase depends (Equation \ref{eq:phase}) on the wavelength $\lambda$ and $d$ the air gap spacing.  We assume the gap is lossless, i.e. $T_g+R_g=1$.  So the incoherent scattering and transfer matrices for the gap are:
+with $\lambda$ the vacuum wavelength, $R$ the Fresnel reflection of silicon, and $F$ the coefficient of finesse.  The coefficient of finesse $F$ and the phase $\delta$ are the two parameters of the Fabry-P\`erot etalon.  The coefficient of Finesse encapsulates the Fresnel reflection and depends only on the Si refractive index which has only a small wavelength (and temperature) dependence.  The phase $\delta$ (Equation \ref{eq:FabPerot}) depends on the wavelength $\lambda$ and $d$ the air gap spacing.  We assume the gap is lossless, i.e. $T_g+R_g=1$.  So the incoherent scattering and transfer matrices for the gap are:
 
 \begin{eqnarray}
 \boldsymbol{S_g}&=&\frac{1}{1+F\sin^2{\delta/2}} \left(

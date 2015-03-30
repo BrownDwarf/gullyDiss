@@ -32,7 +32,7 @@
 \usepackage{makeidx}       	% Package to make an index.
 \usepackage{stylefiles/psfig}         	% Allows inclusion of eps files.
 \usepackage{epsfig}         	% Allows inclusion of eps files.
-%\usepackage{graphicx}
+\usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage{stylefiles/citesort}         	% 
 \usepackage{subfig}
@@ -45,9 +45,10 @@
 \usepackage{url}		% Allows good typesetting of web URLs.
 
 %\usepackage{setspace}
-\usepackage{caption}
 %\usepackage{subcaption}
-\usepackage{hyperref}
+%\usepackage{caption}
+
+%\usepackage{hyperref}
 
 %\usepackage{draftcopy}		% Uncomment this line to have the
 				% word, "DRAFT," as a background
@@ -182,7 +183,7 @@ Austin, Texas 78712-1205}  % Required
 % etc., you need to make an adjustment to the Table of Contents with the
 % command \longtocentry.
 %
-%\longtocentry 
+\longtocentry 
 
 
 
@@ -311,8 +312,8 @@ Infrared spectrographs employing silicon immersion gratings can be significantly
 There are three key challenges to produce high-performance e-beam written silicon immersion gratings.  (1) E-beam field and subfield stitching boundaries cause periodic cross-hatch structures along the grating grooves.   The structures manifest themselves as spectral and spatial dimension ghosts in the diffraction limited point spread function (PSF) of the diffraction grating.  In this paper, we show that the effects of e-beam field boundaries must be mitigated.  We have significantly reduced ghost power with only minor increases in write time by using four or more field sizes of less than 500 $\mu$m. (2) The finite e-beam stage drift and run-out error cause large-scale structure in the wavefront error.  We deal with this problem by applying a mark detection loop to check for and correct out minuscule stage drifts.  We measure the level and direction of stage drift and show that mark detection reduces peak-to-valley wavefront error by a factor of 5. (3) The serial write process for typical gratings yields write times of about 24 hours- this makes prototyping costly.  We discuss work with negative e-beam resist to reduce the fill factor of exposure, and therefore limit the exposure time.
 We also discuss the tradeoffs of long write-time serial write processes like e-beam with UV photomask lithography.  We show the results of experiments on small pattern size prototypes on silicon wafers.  Current prototypes now exceed 30 dB of suppression on spectral and spatial dimension ghosts compared to monochromatic spectral purity measurements of the backside of Si echelle gratings in reflection at 632 nm.  We perform interferometry at 632 nm in reflection with a 25 mm circular beam on a grating with a blaze angle of 71.6$^\circ$.  The measured wavefront error is 0.09 waves peak to valley.
 
-%\emph{Si Gaps abstract}
-%Silicon direct bonding offers flexibility in the design and development of Si optics by allowing manufacturers to combine subcomponents with a potentially lossless and mechanically stable interface. The bonding process presents challenges in meeting the requirements for optical performance because air gaps at the Si interface cause large Fresnel reflections. Even small (35 nm) gaps reduce transmission through a direct bonded Si compound optic by 4\% at $\lambda = 1.25 \; \mu$m at normal incidence. Understanding the optical effects of such gaps and evaluation of various methods for preventing or eliminating them demands that we have a method for measuring not only the two-dimensional extent of the gaps but also their axial extent.  Existing methods for studying gaps provide only poor measures of this axial extent.  We describe a bond inspection method that makes use of precision slit spectroscopy.  Using spectroscopy, we detect and measure gaps as small as 14 nm by measuring transmission as a function of wavelength. Our analysis involves modeling multiple incoherent reflections within the substrate interfaces with a wave transfer matrix, modified for intensities rather than complex amplitudes. We infer the gap axial extent and fill factor with Monte Carlo Markov Chain (MCMC) and a flexible Gaussian process noise model.  We describe the measurement and analysis techniques and demonstrate the validity of the approach by measuring bond gaps of known depths produced by microlithography.
+\emph{Si Gaps abstract}
+Silicon direct bonding offers flexibility in the design and development of Si optics by allowing manufacturers to combine subcomponents with a potentially lossless and mechanically stable interface. The bonding process presents challenges in meeting the requirements for optical performance because air gaps at the Si interface cause large Fresnel reflections. Even small (35 nm) gaps reduce transmission through a direct bonded Si compound optic by 4\% at $\lambda = 1.25 \; \mu$m at normal incidence. Understanding the optical effects of such gaps and evaluation of various methods for preventing or eliminating them demands that we have a method for measuring not only the two-dimensional extent of the gaps but also their axial extent.  Existing methods for studying gaps provide only poor measures of this axial extent.  We describe a bond inspection method that makes use of precision slit spectroscopy.  Using spectroscopy, we detect and measure gaps as small as 14 nm by measuring transmission as a function of wavelength. Our analysis involves modeling multiple incoherent reflections within the substrate interfaces with a wave transfer matrix, modified for intensities rather than complex amplitudes. We infer the gap axial extent and fill factor with Monte Carlo Markov Chain (MCMC) and a flexible Gaussian process noise model.  We describe the measurement and analysis techniques and demonstrate the validity of the approach by measuring bond gaps of known depths produced by microlithography.
 
 \tableofcontents   % Table of Contents will be automatically
                    % generated and placed here.
@@ -337,10 +338,10 @@ We also discuss the tradeoffs of long write-time serial write processes like e-b
 %
 
 \include{ch1/chapter-introduction}
-%\include{chSPIE_2010_JWST/mgs_spie_2010_v1_5}
+\include{chSPIE_2010_JWST/mgs_spie_2010_v1_5}
 %\include{chSPIE_2012_CA1/chapter-2012-CA1}
 %\include{chSPIE_2014_ebeam/chapter-2014-ebeam}
-\include{chSiGaps/AO_bondedSi}
+%\include{chSiGaps/AO_bondedSi}
 
 
 %\include{chGratingDesign/chapter-gratingdesign}
