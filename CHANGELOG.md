@@ -20,6 +20,8 @@ This project does not yet adhere to [Semantic Versioning](http://semver.org/).
 - SPIE 2010 JWST references to the bibliography
 - Figures for all SPIE 2010, 2012, 2014
 - Bonded Si optics chapter
+- CS16 proceeding on the Allers et al. 2006 spectroscopic follow up is now a chapter
+- CS16 figures now .pdfs
 
 ### Fixed
 - Replace figs/ with chapter/figs to get the document to compile (for SPIE 2010, 2012, and 2014)
