@@ -9,6 +9,7 @@ This project does not yet adhere to [Semantic Versioning](http://semver.org/).
 - Name of SPIE 2014 ebeam chapter is now chapter-2014-ebeam
 - Name of SPIE 2012 ebeam chapter is now chapter-2012-CA1
 - Replace bibliography style `plain` with `plainnat`, but include \usepackage[numbers]{natbib} to get the numbers and \citet formatted correctly.
+- Had to comment out the deluxetables to get the document to compile
 
 ### Added
 - Keep a CHANGELOG
@@ -23,6 +24,9 @@ This project does not yet adhere to [Semantic Versioning](http://semver.org/).
 - Bonded Si optics chapter
 - CS16 proceeding on the Allers et al. 2006 spectroscopic follow up is now a chapter
 - CS16 figures now .pdfs
+- IMACS chapter at v0.4
+- IMACS bibliography.  Note that the diss includes sources that were in the .bib but did not get referenced in the text (nocite flag).
+
 
 ### Fixed
 - Replace figs/ with chapter/figs to get the document to compile (for SPIE 2010, 2012, and 2014)

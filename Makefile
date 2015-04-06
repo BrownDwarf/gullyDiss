@@ -30,5 +30,6 @@ all: gullydiss.pdf
 	rm -rf chSPIE_2014_ebeam/*.aux
 	rm -rf chSPIE_2012_CA1/*.aux
 	rm -rf chSPIE_2010_JWST/*.aux
+	rm -rf chIMACS/*.aux
 	rm -rf chCS16/*.aux
 	rm -rf appendices/*.aux
