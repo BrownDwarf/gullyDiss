@@ -8,6 +8,7 @@ This project does not yet adhere to [Semantic Versioning](http://semver.org/).
 - Remove the existing proto-chapters
 - Name of SPIE 2014 ebeam chapter is now chapter-2014-ebeam
 - Name of SPIE 2012 ebeam chapter is now chapter-2012-CA1
+- Replace bibliography style `plain` with `plainnat`, but include \usepackage[numbers]{natbib} to get the numbers and \citet formatted correctly.
 
 ### Added
 - Keep a CHANGELOG
