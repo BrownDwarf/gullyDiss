@@ -1,44 +1,4 @@
-\documentclass[12pt,preprint]{aastex}
-%\usepackage{comment}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{natbib,graphicx,latexsym,lscape}
-
-\citestyle{aa}
-\slugcomment{\bf April 4, 2015 draft}
-\shortauthors{Gully-Santiago \emph{et al.}}
-\shorttitle{Characterization of Young Brown Dwarfs}
-
-%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
-\usepackage{amssymb}
-\usepackage{epstopdf}
-\usepackage{enumerate}
-\usepackage{booktabs}
-\usepackage{multirow}
-\usepackage{rotating}
-\usepackage{longtable}
-\usepackage{url}
-\newcommand{\angstrom}{\mbox{\normalfont\AA}}
-\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
-
-\title{Evolved disk population of young brown dwarfs in \emph{Ophiuchus}\footnote{This paper includes data gathered with the 6.5 meter Magellan Telescopes located at Las Campanas Observatory, Chile.}}
-
-\author{M.~A.~Gully-Santiago}
-\affil{Department of Astronomy, University of Texas at Austin, Austin, TX 78712, USA; gully@astro.as.utexas.edu}
-
-\author{A.~J.~Weinberger}
-\affil{Department of Terrestrial Magnetism, Carnegie Institution of Washington, 5241 Broad Branch Road, NW, Washington, DC 20015-1305}
-
-\author{K.~N.~Allers\altaffilmark{1}}
-\affil{Department of Physics and Astronomy, Bucknell University, Lewisburg, PA 17837, USA; k.allers@bucknell.edu}
-
-\author{D.~T.~Jaffe}
-\affil{Department of Astronomy, University of Texas at Austin, Austin, TX 78712, USA}
-
-\altaffiltext{1}{Visiting Astronomer at the Infrared Telescope Facility,
-  which is operated by the University of Hawaii under Cooperative
-  Agreement No. NCC 5-538 with the National Aeronautics and Space
-  Administration, Office of Space Science, Planetary Astronomy Program.}
-
+\chapter{Evolved disk population of young brown dwarfs in \emph{Ophiuchus}\footnote{This paper includes data gathered with the 6.5 meter Magellan Telescopes located at Las Campanas Observatory, Chile.}}
 
 \begin{document}
 \maketitle
@@ -50,27 +10,27 @@
 \subsection{Young brown dwarfs as a laboratory to study star formation}
 
 \subsubsection{Basic facts, history, and some outstanding questions}
-One out-standing question in star formation is ``How do the properties of young stars affect the evolution of their circumstellar disks''.  The effects of stellar mass, multiplicity, and radiative properties have been studied across the mass range from Herbig Ae-Be stars to brown dwarfs \citep{2011ARA&A..49...67W}.  Extending studies further into the substellar regime is especially appealing since they offer vastly different radiative environments and lower accretion rates \citep{2003ApJ...592..266M, 2009ApJ...696.1589H}.  We assume disk evolution properties vary smoothly across the stellar-substellar boundary.  Most of the young star or young brown dwarf luminosity comes from accretion and gravitational contraction, not hydrogen burning \citep{2003A&A...402..701B}.  We aim to understand how circumstellar disk evolution proceeds around brown dwarfs compared to their higher-mass \emph{T-Tauri} star counterparts.
+One out-standing question in star formation is ``How do the properties of young stars affect the evolution of their circumstellar disks''.  The effects of stellar mass, multiplicity, and radiative properties have been studied across the mass range from Herbig Ae-Be stars to brown dwarfs \citep{2011ARA&A..49...67W}.  Extending studies further into the substellar regime is especially appealing since they offer vastly different radiative environments and lower accretion rates \citep{2003ApJ...592..266M,2009ApJ...696.1589H}.  We assume disk evolution properties vary smoothly across the stellar-substellar boundary.  Most of the young star or young brown dwarf luminosity comes from accretion and gravitational contraction, not hydrogen burning \citep{2003A&A...402..701B}.  We aim to understand how circumstellar disk evolution proceeds around brown dwarfs compared to their higher-mass \emph{T-Tauri} star counterparts.
 
 
 
 \subsubsection{Most BDs form like stars}
-The current prevailing opinion is that most brown dwarfs form just like stars \citep{2014prpl.conf..619C}.  The existence of wide separation, similar mass binary brown dwarfs \citep{2004ApJ...614..398L,2006PhDT.........2A,2007ApJ...660.1492C,2009ApJ...691.1265L} shows that at least some brown dwarfs form from direct gravitational collapse of a gas cloud, and could not have been formed from gravitational instability in the disk of a more massive star.  The existence and ubiquity of circumstellar disks around young brown dwarfs points towards formation just like stars \citep{2005ApJ...635L..93L,allers06,2012ARA&A..50...65L, 2013A&A...559A.126A}.  Large disks cannot survive a three-body interaction that would cause ejection from a stellar counterpart, while small protolunar disks could survive ejection \citep{2009MNRAS.392..413S}.  These wimpy disks would be outwardly truncated at a semimajor axis of tens of AU \citep{2009MNRAS.392..413S}.  These outwardly truncated disks would demonstrating an observational signature of dramatically suppressed mid-IR and far-IR excess emission.  A \emph{Herschel} study of all known young brown dwarfs in \emph{Ophiuchus} \citep{2013A&A...559A.126A} is inconsistent with a large population of outwardly truncated disks, pointing towards formation like stars as the dominant formation pathway for brown dwarfs.  Additionally, recent interferometric ALMA continuum visibilities demonstrate that 3 Taurus brown dwarfs have large, $\sim70 AU$ disks \citep{2014ApJ...791...20R}.  See \citet{2014prpl.conf..619C} for more lines of evidence, and a discussion of the IAU definition of brown dwarfs and giant planets.  We assume that the majority of brown dwarfs form like stars, but that an unknown minority may have formed by ejection from a protoplanetary disk.
+The current prevailing opinion is that most brown dwarfs form just like stars \citep{2014prpl.conf..619C}.  The existence of wide separation, similar mass binary brown dwarfs \citep{2004ApJ...614..398L,2006PhDT.........2A,2007ApJ...660.1492C,2009ApJ...691.1265L} shows that at least some brown dwarfs form from direct gravitational collapse of a gas cloud, and could not have been formed from gravitational instability in the disk of a more massive star.  The existence and ubiquity of circumstellar disks around young brown dwarfs points towards formation just like stars \citep{2005ApJ...635L..93L,allers06,2012ARA&A..50...65L,2013A&A...559A.126A}.  Large disks cannot survive a three-body interaction that would cause ejection from a stellar counterpart, while small protolunar disks could survive ejection \citep{2009MNRAS.392..413S}.  These wimpy disks would be outwardly truncated at a semimajor axis of tens of AU \citep{2009MNRAS.392..413S}.  These outwardly truncated disks would demonstrating an observational signature of dramatically suppressed mid-IR and far-IR excess emission.  A \emph{Herschel} study of all known young brown dwarfs in \emph{Ophiuchus} \citep{2013A&A...559A.126A} is inconsistent with a large population of outwardly truncated disks, pointing towards formation like stars as the dominant formation pathway for brown dwarfs.  Additionally, recent interferometric ALMA continuum visibilities demonstrate that 3 Taurus brown dwarfs have large, $\sim70 AU$ disks \citep{2014ApJ...791...20R}.  See \citet{2014prpl.conf..619C} for more lines of evidence, and a discussion of the IAU definition of brown dwarfs and giant planets.  We assume that the majority of brown dwarfs form like stars, but that an unknown minority may have formed by ejection from a protoplanetary disk.
 
 \subsubsection{Young stars go through evolutionary stages/classes}
-Because they share a common formation pathway, brown dwarfs must also share similar pre-main sequence evolution characteristics.  Young stars go through a set of clear evolutionary stages that have distinctive appearances and physics.  Brown dwarfs must form in exceptionally dense molecular cores, then proceed through an envelope phase, a disk-bearing phase, and a planet formation phase.  The observational signatures of these stages correspond to the observational classes 0, I, II, and III \citep{1987ApJ...312..788A}.  Stars have been observed in all of these stages \citep{2014prpl.conf..195D} while brown dwarfs have been observed in classes I, II, and III.  A few candidate class 0 proto-brown dwarfs exist\citep{2012Sci...337...69A, 2014A&A...564A..32P, 2014MNRAS.444..833P}, for example the source IC348-SMM2E is consistent with an envelope mass of merely $\sim35 M_{Jup}$.  The pre-main sequence classes are largely based on their $T_{\mathrm{bol}}$ \citep{1993ApJ...413L..47M}, or the spectral index in the mid-infrared \citep{1984ApJ...287..610L}.  This is because dust has most of the opacity in the disk, even though it is typically $\lesssim1\%$ of the mass of the disk.  
+Because they share a common formation pathway, brown dwarfs must also share similar pre-main sequence evolution characteristics.  Young stars go through a set of clear evolutionary stages that have distinctive appearances and physics.  Brown dwarfs must form in exceptionally dense molecular cores, then proceed through an envelope phase, a disk-bearing phase, and a planet formation phase.  The observational signatures of these stages correspond to the observational classes 0, I, II, and III \citep{1987ApJ...312..788A}.  Stars have been observed in all of these stages \citep{2014prpl.conf..195D} while brown dwarfs have been observed in classes I, II, and III.  A few candidate class 0 proto-brown dwarfs exist\citep{2012Sci...337...69A,2014A&A...564A..32P,2014MNRAS.444..833P}, for example the source IC348-SMM2E is consistent with an envelope mass of merely $\sim35 M_{Jup}$.  The pre-main sequence classes are largely based on their $T_{\mathrm{bol}}$ \citep{1993ApJ...413L..47M}, or the spectral index in the mid-infrared \citep{1984ApJ...287..610L}.  This is because dust has most of the opacity in the disk, even though it is typically $\lesssim1\%$ of the mass of the disk.  
 
-Physical phenomena scale with stellar evolutionary stages, with concomitant observational signatures trending with classes.  The most conspicuous of observational signatures are likely to be detectable towards brown dwarfs.  Strong H emission lines indicate mass accretion, and should be present in all observational classes, except possibly class III (\emph{e.g.} weak-lined \emph{T-Tauri} star analogs).  Accretion is accompanied by outlows- spatially resolved collisionally excited lines like [OI] $\lambda 6300, 6363 \angstrom$ and [SII] $\lambda 6731 \angstrom$ \citep{2005Natur.435..652W} indicate shocked gas.  Photometric variability, a hallmark of YSOs at all classes and all wavelengths \citep{2014AJ....148...92R, 2014AJ....147...82C}, is evidence for ongoing accretion, photospheric hot spots, and dynamic disk processes.
+Physical phenomena scale with stellar evolutionary stages, with concomitant observational signatures trending with classes.  The most conspicuous of observational signatures are likely to be detectable towards brown dwarfs.  Strong H emission lines indicate mass accretion, and should be present in all observational classes, except possibly class III (\emph{e.g.} weak-lined \emph{T-Tauri} star analogs).  Accretion is accompanied by outlows- spatially resolved collisionally excited lines like [OI] $\lambda 6300, 6363 \angstrom$ and [SII] $\lambda 6731 \angstrom$ \citep{2005Natur.435..652W} indicate shocked gas.  Photometric variability, a hallmark of YSOs at all classes and all wavelengths \citep{2014AJ....148...92R,2014AJ....147...82C}, is evidence for ongoing accretion, photospheric hot spots, and dynamic disk processes.
 
 \subsubsection{Conceivable or observed differences in young stars and substars}
-While you might expect all of the above physics to be present among brown dwarfs, there are some differences.  The radiative environment will be much softer around brown dwarfs, since the accretion luminosity $L_{\mathrm{acc}}$ will scale down with the low mass but large radii of young brown dwarfs.  Young brown dwarf emission peaks at around 1 $\mu$m, almost twice that of their solar mass counter parts.  Passively irradiated disk models \citep{2003A&A...398..607D} show that the sequence of Herbig Ae/Be to \emph{T-Tauri} to young brown dwarf forms a continuum, with no significant variations in the turbulent mixing strength \citep{2012A&A...539A...9M}. However many factors affect the appearance of the SED.  Chief among the factors are grain growth and dust settling \citep{2010ApJ...712..925C}.  The key idea is that the central object temperature and luminosity controls the size of the dust-free cavity through photoevaporation \citep{2011ARA&A..49...67W}.  The location in the disk where the equilibrium temperature of a dust grain is 1400 K is roughly equal to the dust inner rim radius, $R_{inner}$ \citep{2001ApJ...560..957D}.  The detailed location of the dust inner rim depends on the grain size, composition, and local pressure \citep{2005A&A...438..899I}, and presence or absense of disruptive planets \citep{2014prpl.conf..667B, 2015arXiv150302649P}.  One main open question is ``What happens to the dust inner rim when the brown dwarf photospheric temperature declines to equal the dust sublimation temperature?''  Can dust survive all the way up to the stellar surface?  The luminosity of the dust inner rim depends on both its equilibrium temperature and emitting area.  Assuming a fixed (1400 K) dust inner rim temperature, the emitting area of the dust rim controls the luminosity of the disk compared to the luminosity of the star.  The ratio of disk flux to photospheric flux at a given wavelength will therefore decrease as a function of photospheric temperature.  This effect has been used to explain the purported high frequency of transition disks in M stars \citep{2009MNRAS.394L.141E}, and is consistent with \emph{Herschel} observations towards brown dwarfs in \emph{Ophiuchus} \citep{2013A&A...559A.126A}.
+While you might expect all of the above physics to be present among brown dwarfs, there are some differences.  The radiative environment will be much softer around brown dwarfs, since the accretion luminosity $L_{\mathrm{acc}}$ will scale down with the low mass but large radii of young brown dwarfs.  Young brown dwarf emission peaks at around 1 $\mu$m, almost twice that of their solar mass counter parts.  Passively irradiated disk models \citep{2003A&A...398..607D} show that the sequence of Herbig Ae/Be to \emph{T-Tauri} to young brown dwarf forms a continuum, with no significant variations in the turbulent mixing strength \citep{2012A&A...539A...9M}. However many factors affect the appearance of the SED.  Chief among the factors are grain growth and dust settling \citep{2010ApJ...712..925C}.  The key idea is that the central object temperature and luminosity controls the size of the dust-free cavity through photoevaporation \citep{2011ARA&A..49...67W}.  The location in the disk where the equilibrium temperature of a dust grain is 1400 K is roughly equal to the dust inner rim radius, $R_{inner}$ \citep{2001ApJ...560..957D}.  The detailed location of the dust inner rim depends on the grain size, composition, and local pressure \citep{2005A&A...438..899I}, and presence or absense of disruptive planets \citep{2014prpl.conf..667B,2015arXiv150302649P}.  One main open question is ``What happens to the dust inner rim when the brown dwarf photospheric temperature declines to equal the dust sublimation temperature?''  Can dust survive all the way up to the stellar surface?  The luminosity of the dust inner rim depends on both its equilibrium temperature and emitting area.  Assuming a fixed (1400 K) dust inner rim temperature, the emitting area of the dust rim controls the luminosity of the disk compared to the luminosity of the star.  The ratio of disk flux to photospheric flux at a given wavelength will therefore decrease as a function of photospheric temperature.  This effect has been used to explain the purported high frequency of transition disks in M stars \citep{2009MNRAS.394L.141E}, and is consistent with \emph{Herschel} observations towards brown dwarfs in \emph{Ophiuchus} \citep{2013A&A...559A.126A}.
 
 
-The average steady state accretion rates scale as a function of mass with the the scaling factor $\alpha$ in $\dot{M}\propto M^\alpha$ approximately equal to $\alpha \sim 2$ \citep{2008A&A...481..423G, 2006ApJ...639L..83A,2006A&A...452..245N,2009ApJ...696.1589H}.  The explanation for $\alpha \sim 2$ is unclear \citep{2006ApJ...648..484H}.  The ratio of stellar mass to stellar radius $M/R$ scales with $M^{>0}$ \citep{2009AIPC.1094..102C}, so the energy of impact $\propto M/R$ should scale with mass.  Existing measures of accretion rate are noisy owing to the uncertainty in assigning mass accretion rates based emission line strengths, and the intrinsic variability of accretion.  Instruments with pan-chromatic UV-visible-near-IR spectroscopy \citep{2011A&A...536A.105V,2012A&A...548A..56R} are improving the accuracy of these methods.  When taken in aggregate, the mass accretion rates show a clear diminution of mass accretion rate as a function of mass.  It has recently been suggested that the scaling factor could arise from selection effects of brown dwarfs \citep{2010MNRAS.409.1307M}.  If true, this selection bias would mean there is an unobserved population of luminous brown dwarfs with mass accretion rates $\log{\dot{M}/(M_{\odot}\mathrm{yr}^{-1})} >-9$ that has largely evaded detection.
+The average steady state accretion rates scale as a function of mass with the the scaling factor $\alpha$ in $\dot{M}\propto M^\alpha$ approximately equal to $\alpha \sim 2$ \citep{2008A&A...481..423G,2006ApJ...639L..83A,2006A&A...452..245N,2009ApJ...696.1589H}.  The explanation for $\alpha \sim 2$ is unclear \citep{2006ApJ...648..484H}.  The ratio of stellar mass to stellar radius $M/R$ scales with $M^{>0}$ \citep{2009AIPC.1094..102C}, so the energy of impact $\propto M/R$ should scale with mass.  Existing measures of accretion rate are noisy owing to the uncertainty in assigning mass accretion rates based emission line strengths, and the intrinsic variability of accretion.  Instruments with pan-chromatic UV-visible-near-IR spectroscopy \citep{2011A&A...536A.105V,2012A&A...548A..56R} are improving the accuracy of these methods.  When taken in aggregate, the mass accretion rates show a clear diminution of mass accretion rate as a function of mass.  It has recently been suggested that the scaling factor could arise from selection effects of brown dwarfs \citep{2010MNRAS.409.1307M}.  If true, this selection bias would mean there is an unobserved population of luminous brown dwarfs with mass accretion rates $\log{\dot{M}/(M_{\odot}\mathrm{yr}^{-1})} >-9$ that has largely evaded detection.
 
 Brown dwarfs will not follow a Henyey track \citep{1959ApJ...129....2H}.  Instead, brown dwarfs monotonically cool and dim for trillions of years.  In the first several millions of years the substellar photospheric evolution should give rise to secular changes.  The disk lifetimes around brown dwarfs are likely short compared to the evolution timescale-- you do not need to consider the evolution of the brown dwarf itself over the disks's lifetime.  For example, a 50 $M_{Jup}$ brown dwarf will decrease in luminosity by a factor of about 2 over the $\lesssim5$ Myr disk lifetime \citep{2002A&A...382..563B}.  It is conceivable that long-lived disks cool along with the brown dwarf photosphere.
 
-For low mass stars, the majority of mass accretion occurs in stages 0 and I, when the protostar is most embedded \citep{2007ARA&A..45..565M,2014prpl.conf..195D}.  The ubiquity of underluminous class 0 YSOs indicates that most mass accretes in short-lived episodes \citep{2008ApJS..179..249D}.  Mass accretion rates are highly variable during this stage \citep{2006ApJ...650..956V,2009ApJ...702L..27B,2014prpl.conf..387A}.  Specifically, the \emph{Spitzer} legacy program ``From molecular cores to planet-forming disks'' \citep[][\emph{c2d}]{2009ApJS..181..321E} pointed out that a constant mass accretion rate of $10^{-6} M_{\odot}\mathrm{yr}^{-1}$ would form a solar mass star in 1 Myr, but that accretion luminosities corresponding to $\sim10^{-8} M_{\odot}\mathrm{yr}^{-1}$ were observed.  So protostars must accrete their mass in several very short bursts, with burst timescales consistent with \emph{FU Orionis} events \citep{2014prpl.conf..195D}.  The presence of chemical species indicative of high disk temperatures also lends support to the episodic accretion paradigm \citep{2012ApJ...754L..18V}.  We know it happens for stars, and since we think stars and brown dwarfs form in the same way, episodic accretion must too happen for brown dwarfs.  This is important because accretion history is predicted to have an observational consequence on the luminosities of very low mass stars and brown dwarfs \citep{2009ApJ...702L..27B, 2011ApJ...730...32S}.  Specifically, episodic accretion onto a 50 $M_{Jup}$ is predicted to demonstrate a luminosity spread equivalent to an age spread of $\sim10$ Myr.  Sources that look young are young, while sources that look old, could still be young but look old.  The effect size is greatest for the lowest mass sources, which can be understood because these sources are accreting a large fraction of their mass in these episodes.  Young (1-10 Myr) brown dwarfs offer a unique laboratory to directly probe the evolutionary history of individual objects.  This method is complementary to the aggregate methods of class 0 protostars.  
+For low mass stars, the majority of mass accretion occurs in stages 0 and I, when the protostar is most embedded \citep{2007ARA&A..45..565M,2014prpl.conf..195D}.  The ubiquity of underluminous class 0 YSOs indicates that most mass accretes in short-lived episodes \citep{2008ApJS..179..249D}.  Mass accretion rates are highly variable during this stage \citep{2006ApJ...650..956V,2009ApJ...702L..27B,2014prpl.conf..387A}.  Specifically, the \emph{Spitzer} legacy program ``From molecular cores to planet-forming disks'' \citep[][\emph{c2d}]{2009ApJS..181..321E} pointed out that a constant mass accretion rate of $10^{-6} M_{\odot}\mathrm{yr}^{-1}$ would form a solar mass star in 1 Myr, but that accretion luminosities corresponding to $\sim10^{-8} M_{\odot}\mathrm{yr}^{-1}$ were observed.  So protostars must accrete their mass in several very short bursts, with burst timescales consistent with \emph{FU Orionis} events \citep{2014prpl.conf..195D}.  The presence of chemical species indicative of high disk temperatures also lends support to the episodic accretion paradigm \citep{2012ApJ...754L..18V}.  We know it happens for stars, and since we think stars and brown dwarfs form in the same way, episodic accretion must too happen for brown dwarfs.  This is important because accretion history is predicted to have an observational consequence on the luminosities of very low mass stars and brown dwarfs \citep{2009ApJ...702L..27B,2011ApJ...730...32S}.  Specifically, episodic accretion onto a 50 $M_{Jup}$ is predicted to demonstrate a luminosity spread equivalent to an age spread of $\sim10$ Myr.  Sources that look young are young, while sources that look old, could still be young but look old.  The effect size is greatest for the lowest mass sources, which can be understood because these sources are accreting a large fraction of their mass in these episodes.  Young (1-10 Myr) brown dwarfs offer a unique laboratory to directly probe the evolutionary history of individual objects.  This method is complementary to the aggregate methods of class 0 protostars.  
 
 
 In the details, brown dwarf disk properties differ from their higher-mass \emph{T-Tauri} star counterparts \citep{2009ApJ...696..143P}.  The disk frequency and lifetime may be a function of stellar mass and star forming region.  At an age of $\sim$1 Myr, 40\% of the brown dwarfs in the Taurus region have disks, which is lower than the disk fraction for Taurus stars \citep{2006ApJ...645..676L}.  While that might suggest that fewer brown dwarfs are born with disks, samples in the older, $\sim$2$-$3 Myr, Chamaeleon and IC 348 regions complicate the story.  \cite{2005ApJ...631L..69L} find that $\sim$50\% of those brown dwarfs have disks, slightly higher than the fraction for stars.  \citet{2008ApJ...681.1584R} showed that 3/5 brown dwarfs in TW Hydra retained their primordial disks, whereas only 6/25 of their higher-mass counterparts in the same cluster showed any evidence for disks.  Allers et al. (in prep.) have evidence that the much older young brown dwarf field population has evidence for IR excess indicative of circumstellar disks.  This discovery was especially surprising since primordial disks are rare after 10 Myr \citep{2011ARA&A..49...67W}.  It is conceivable that the initial disk fraction around brown dwarfs and stars is similar, but brown dwarf disks have longer lifetimes because they accrete more slowly \citep{2007ApJ...657..511A}.  The results are tentative.  Specifically, poor statistics have made it difficult to say whether brown dwarf disks \emph{really} do last longer than disks around stars.  The reported uncertainties in disk fractions are typically 10$-$20\% \citep{2012MNRAS.420.2497R}.  \citet{2007ApJ...660.1517S} and \citet{2009ApJ...705.1173R} report disk fractions in discord at $>2\sigma$ for distinct subsamples of brown dwarf members of Upper Scorpius.  Finally, the TBOSS survey has shown that Taurus has a smaller fraction of brown dwarfs detected at 70 $\mu$m than Ophiuchus does, pointing to the possible role of environment (if not age) in disk evolution. \citep{2014A&A...570A..29B}
@@ -90,7 +50,7 @@ To understand brown dwarfs, we need a large, complete, unbiased sample.  Barring
 
 Detection techniques for brown dwarfs have been ``success-oriented''.  Low luminosity ($\lesssim10^{-3}L_{\odot}$) brown dwarfs are hard to find among copious reddened background stars and galaxies.  There are several independent groups aiming to detect the bottom of the substellar initial mass function (IMF).
 
-There have been dozens, if not hundreds, of searches for brown dwarfs in nearby star forming clusters (see \citet{2012ARA&A..50...65L} for a recent review).  Some representative examples include \cite{2004ApJ...602..816L, 2012A&A...539A.151A, 2014ApJ...785..159M}.  The approaches in these searches all differ in their details, but the main theme is to construct a color magnitude diagram, and select sources that are brighter and redder than some threshold/  This strategy relies on the fact that there are very few luminous red sources in the foreground, since the star forming regions are relatively close by ($\sim150$ pc).  This strategy works fine for stellar sources, which are much more luminous than the background objects.  Brown dwarfs on the other hand exhibit optical and near-IR colors and magnitudes comparable to reddened distant background objects.  At the same time, the intrinsic number density of brown dwarfs is decreasing, so the problem is like searching for a needle-in-a-haystack.  The contamination becomes so unmanageable that additional selection methods become necessary in order to cull the candidates to a number of candidates that is amenable to followup spectroscopy.  The additional selection methods vary.  One main strategy is simply to select sources that exhibit mid-IR excess \citep{allers06}.  This choice has the virtue of offering a high likelihood of success- 18/19 of the \citet{allers06} sample were confirmed as bona fide young late-type sources \citep{2011ASPC..448..633G}.  Further, the availability of deep mid-IR imaging from \emph{c2d} (and to a lesser depth \emph{WISE}), makes it feasible to carry out this strategy.  
+There have been dozens, if not hundreds, of searches for brown dwarfs in nearby star forming clusters (see \citet{2012ARA&A..50...65L} for a recent review).  Some representative examples include \cite{2004ApJ...602..816L,2012A&A...539A.151A, 2014ApJ...785..159M}.  The approaches in these searches all differ in their details, but the main theme is to construct a color magnitude diagram, and select sources that are brighter and redder than some threshold/  This strategy relies on the fact that there are very few luminous red sources in the foreground, since the star forming regions are relatively close by ($\sim150$ pc).  This strategy works fine for stellar sources, which are much more luminous than the background objects.  Brown dwarfs on the other hand exhibit optical and near-IR colors and magnitudes comparable to reddened distant background objects.  At the same time, the intrinsic number density of brown dwarfs is decreasing, so the problem is like searching for a needle-in-a-haystack.  The contamination becomes so unmanageable that additional selection methods become necessary in order to cull the candidates to a number of candidates that is amenable to followup spectroscopy.  The additional selection methods vary.  One main strategy is simply to select sources that exhibit mid-IR excess \citep{allers06}.  This choice has the virtue of offering a high likelihood of success- 18/19 of the \citet{allers06} sample were confirmed as bona fide young late-type sources \citep{2011ASPC..448..633G}.  Further, the availability of deep mid-IR imaging from \emph{c2d} (and to a lesser depth \emph{WISE}), makes it feasible to carry out this strategy.  
 
 Selection methods demanding the presence of mid-IR excess cannot discover sources without mid-IR excess.  Evolved disks go undiscovered.  These evolved disks include debris disks and Class III analogs that have already undergone a phase of primodial disk clearing (perhaps by planet formation).  This tautological bias means that brown dwarfs with disks are probably over-represented in our counts of young brown dwarfs.  It is hard to say to what extent the number of diskless brown dwarfs is under-estimated.  It's conceivable that diskless brown dwarfs are rare, because the disk dispersal timescale is longer in brown dwarfs \citep{2008ApJ...681.1584R}.  Or it could be that disks that have already evolved went through a period of vigorous accretion that caused the sources to appear underluminous for their age \citep{2009ApJ...702L..27B}, further hindering their unambiguous selection and detection.  In the latter case, diskless brown dwarfs, and therefore brown dwarfs altogether, would be more common, raising the question- ``What else is there?''.  For example, are there pure photosphere sources or more extreme transition disks?  Are we over-estimating accretion rates by selecting for strong disks?  Are we missing objects hidden behind their disks by viewing angle?  What are the different modes of evolution?  Again, to fully understand the YSO phase of BDs, we need to have examples of the full range of source types. 
 
@@ -129,7 +89,7 @@ In this section we describe the photometry in bands $I$, $J$, $W$, $H$, $K$, IRA
 \begin{figure}[ht!]
 \caption{ Map of the region targeted by our survey.  The background grayscale image is the 2MASS NICER extinction map \citep{2008A&A...489..143L} from the COMPLETE project \citep{2006AJ....131.2921R}.  The solid line boundaries envelope our regions of custom photometry with the following color scheme: \emph{blue} for ISPI $J-$ and $H-$ band, \emph{green} for ISPI $K-$band, \emph{red} for deep \emph{Spitzer} IRAC, \emph{magenta} for MOSAIC $I-$band, and \emph{yellow} for the custom $W-$band.  The large \emph{purple} box defines our 2MASS search region.  The markers concentrated toward the right side of the image are from from previous surveys of \emph{Upper Scorpius}. \emph{Green diamonds:} \citet{2012ApJ...758...31L}, \emph{yellow squares:} \cite{2006AJ....131.3016S}.  \emph{Ophiuchus} members are concentrated around the core.  \emph{Blue sqaures:} \cite{2011AJ....142..140E}, \emph{cyan squares:} \cite{2010ApJS..188...75M}, and \emph{magenta diamonds:} \cite{2005AJ....130.1733W}.  All known brown dwarfs detected by \emph{Herschel} are shown as \emph{green upward pointing triangles}, while brown dwarfs not detected by \emph{Herschel} are \emph{red downward pointing triangles}, \cite{2013A&A...559A.126A}. \label{fig_star_chart} }
 \centering
-\includegraphics[scale=0.5]{figures/Ophiuchus_map}
+\includegraphics[scale=0.5]{chIMACS/figures/Ophiuchus_map}
 \end{figure}
 
 
@@ -139,7 +99,7 @@ We acquired a catalog of deep [5.8] and [8.0] photometry from \citet{2010ApJ...7
 \subsubsection{New: W filter}
 Allers et al. (in prep) designed and implemented a custom filter centered at 1.4 $\mu$m, intermediate between the $J-$ and $H-$ atmospheric windows.  This filter is about 0.2 $\mu$m wide, cutting on near the long end of $J$ and cutting off near the short end of $H$.  This photometric band was designed to distinguish between the photospheric emission of late M and L spectral types and that of reddened early FGKM spectral types.  The broad-band IJHK colors for these disparate sources are identical, while the $W-$filter band photometry shows a deficit in M-type spectra.
 
-One potential pitfall with the $W-$band is that this wavelength region has high and variable telluric water absorption- the same water absorption we are looking for in the photospheres of late type objects.  The extinction is problematic for two reasons.  First, the absolute transmission through the filter will be low.  Second, the variability of the telluric water absorption will manifest as shifting wavelength-dependent zero-points. To ameliorate these problems we observed from the high, dry site Mauna Kea, where the telluric water absorption is much lower than other sites.  Ideally the $W-$band photometry should be taken contemporaneously with $J-$ and $H-$ bands, in order to overcome the variability problem.  The variability is especially acute for late type young brown dwarfs that demonstrate intrinsic variability from accretion \citep{2008A&A...485..155A, 2014AJ....147...82C}.
+One potential pitfall with the $W-$band is that this wavelength region has high and variable telluric water absorption- the same water absorption we are looking for in the photospheres of late type objects.  The extinction is problematic for two reasons.  First, the absolute transmission through the filter will be low.  Second, the variability of the telluric water absorption will manifest as shifting wavelength-dependent zero-points. To ameliorate these problems we observed from the high, dry site Mauna Kea, where the telluric water absorption is much lower than other sites.  Ideally the $W-$band photometry should be taken contemporaneously with $J-$ and $H-$ bands, in order to overcome the variability problem.  The variability is especially acute for late type young brown dwarfs that demonstrate intrinsic variability from accretion \citep{2008A&A...485..155A,2014AJ....147...82C}.
 
 Despite the telluric absorption challenge, the $W-$ filter works- it has already been successfully applied to select brown dwarfs with over 90\% confirmation rate (K. Allers, \emph{priv. comm.}).  As a demonstration of the technique, we successfully recovered known brown dwarfs from their $W-$band photometry alone.  
 
@@ -149,7 +109,7 @@ The $W-$ band photometry in this work was observed with the University of Hawaii
 
 We use the Source Extractor \citep{1996A&AS..117..393B} to perform aperture photometry on the sources in mosaicked frames.  We mitigated a large number of outlier pixels by median combining the images.
 
-\input{tables/tbl_photomCatalog}
+\input{chIMACS/tables/tbl_photomCatalog}
 
 \subsection{Catalog I. Deep JH selected (ISPI)}
 Membership to the catalog requires $5\; \sigma$ detection in both $J$ and $H$ bands.  A total of 54373 sources met this criterion, setting the length of our catalog at 54373.  We refer to this catalog as the ``Deep $JH$ Catalog'', or Catalog I.  We justified the $JH$ detection requirement because these are the bands in which young brown dwarfs peak in flux.   Sources below our 5~$\sigma$ detection limits in $J-$ and $H-$ bands would stand little chance of followup near-IR spectroscopy with existing instrumentation.  Further, sources with large $I-J$, an expectation for late-type reddened young brown dwarfs, would stand even less of a chance of optical spectroscopic followup.  The astrometric solution comes from the ISPI astrometry, which is pegged to 2MASS (see \citet{allers06} for details).  
@@ -176,7 +136,7 @@ We first considered the sensitivity of the instrument to set the limiting magnit
 
 We devised four physically motivated selection criteria.  Each criterion incorporated a different aspect of known or expected physics.  The criteria are broadly $IJHK$ colors, $H- [3.6]$, custom $W-$filter, and mid-IR excess.  The criteria are binary-- the candidate met the criterion or it did not.  In this section we describe the motivation and justification for the details of these four selection criteria.  In the next subsection we describe the method we used for combining the various combinations of these 4 criteria to issue an observation priority for each candidate.  Table \ref{tbl_selectionScores} summarizes the 4 four criteria.
 
-\input{tables/tbl_selectionScores.tex}
+\input{chIMACS/tables/tbl_selectionScores.tex}
 
 \subsubsection{Near-IR photometric selection}
 \label{sec_NIR_selection}
@@ -192,7 +152,7 @@ Our next color cut is to select for blue intrinsic $J-H$ colors.  All sources in
 \begin{figure}[ht!]
   \caption{Color-color cuts in $I-J$ vs $J-H$. The horizontal dashed line shows $I-J=2.85$.  The tilted dotted line demonstrates the selection for intrinsic blue $J-H$ colors ($<0.84156$), allowing for reddening.  The grayscale Hess diagram in the background shows the density of points in each color bin, constructed from 34469 sources with $I-$band detections.  The points in the upper left quadrant of the diagram meet the color cuts 2 and 3 from the list in Section \ref{sec_NIR_selection}.  The magenta circles are sources from \citet{allers06} that have spectral types between M6 and L2 \citep{2011ASPC..448..633G}.\label{fig_NIR_selection_JH}}
 \centering
-\includegraphics[scale=0.6]{figures/NIR_selection_allers_M6_L2}
+\includegraphics[scale=0.6]{chIMACS/figures/NIR_selection_allers_M6_L2}
 \end{figure}
 
 We leveraged the $K-$band photometry when it was available to make another color cut.  Like the $I-$band data, the $K-$ band had incomplete spatial coverage-- only 38\% of sources had a $K-$band measurement available.  Our strategy here was similar to the color cut above selecting for blue intrinsic $J-H$ color, except now we are selecting for intrinsic blue $J-K$ color.  We assumed a maximum $J-K$ for brown dwarfs of 1.37662 in the MKO system.  We then built a reddening relationship between $I-J$ and $J-K$ that takes into account the selective extinction in from ADPS, as above.  Lastly, we removed sources that were redder than this curve, removing only sources that had $K-$band available.  The sources we removed satisfied this criterion:  $I-J + \sigma_{I-J} < 2.85 + [(J-K) - (J-K)_0 - \sigma_{J-K}]\frac{A_I-A_J}{A_J - A_K}$, where $\sigma_{I-J}$ is the same as it is above, and $\sigma_{J-K}$ is the photometric measurement uncertainty in $J-$ and $K-$ bands added in quadrature.  This color cut was met by 11020/54373 sources, which means that the complement, or 43353 passed on.  Combining this criterion with the previous color cuts brings the passage rate from 7.3\% from the previous cuts to 6.8\% including this one.
@@ -200,7 +160,7 @@ We leveraged the $K-$band photometry when it was available to make another color
 \begin{figure}[ht!]
   \caption{Color-color cuts in $I-J$ vs $J-K$. The horizontal dashed line shows $I-J=2.85$.  The tilted dotted line demonstrates the selection for intrinsic blue $J-K$ colors ($<1.37662$), allowing for reddening.  The grayscale Hess diagram in the background shows the density of points in each color bin, constructed from 19733 sources with both $I-$ and $K-$band detections.  The points in the upper left quadrant of the diagram meet the color cuts 2 and 4 from the list in Section \ref{sec_NIR_selection}.  The square boxes plotted are sources from \citet{allers06} which have spectral types between M6 and L2 \citep{2011ASPC..448..633G}.\label{fig_NIR_selection_JK}}
 \centering
-\includegraphics[scale=0.6]{figures/NIR_selection_JK_allers_M6_L2}
+\includegraphics[scale=0.6]{chIMACS/figures/NIR_selection_JK_allers_M6_L2}
 \end{figure}
 
 
@@ -209,7 +169,7 @@ Lastly, we applied a $K-$ magnitude cut, with the intention of finding the faint
 \begin{figure}[ht!]
   \caption{$H-$band Magnitude cut.  The horizontal dashed line shows $H=13.99$.  The grayscale Hess diagram in the background shows the density of points in each color-magnitude bin, constructed from the entire 54373 point ISPI deep $JH$ source catalog.  The circles are sources from \citet{allers06} towards \emph{Ophiuchus}.  The two \citet{allers06} sources with $H>13.99$ have M8 spectral types, while th others are M6 or earlier \citep{2011ASPC..448..633G}. \label{fig_NIR_selection_H}}
 \centering
-\includegraphics[scale=0.6]{figures/NIR_selection_H_allers_oph}
+\includegraphics[scale=0.6]{chIMACS/figures/NIR_selection_H_allers_oph}
 \end{figure}
 
 
@@ -237,7 +197,7 @@ Note that the mid-IR excess threshold as defined above is fairly liberal- source
 \begin{figure}[ht!]
   \caption{$[3.6]-[5.8]$ vs $[3.6]-[8.0]$ color plot, demonstrating the mid-IR excess selection criterion.  The grayscale Hess diagram shows the density of 14095 sources in our sample possessing a 2 $\sigma$ detection in $[3.6]$ and a 2$\sigma$ detection in at least one of $[5.8]$, $[8.0]$, or $[24]$.  The horizontal dashed line is $[3.6]-[8.0]=0.21$, the vertical line is $[3.6]-[8.0]=0.08$ \citep{2006ApJ...651..502P}.  Sources meeting the criteria described in Section \ref{sec_midIR_selection} are primarily in the upper right quadrant.  Some sources with 3$\sigma$ $[24]$ detections are in the other quadrants.  The large colored circles are all sources from \citet{allers06}. \label{fig_midIR_selection}}
 \centering
-\includegraphics[scale=0.6]{figures/disk_selection_allers}
+\includegraphics[scale=0.6]{chIMACS/figures/disk_selection_allers}
 \end{figure}
 
 \subsubsection{$W-$ filter selection criterion}
@@ -250,7 +210,7 @@ We designed our $W-$band selection criterion around the value of the $Q$ paramet
 \begin{figure}[ht!]
 	\caption{Histogram of the $Q$ value derived from $W-$band photometry.  The vertical dashed lines represent the boundaries of the selection method.  The dark colored region region interior to the boundaries indicates the 4\% of sources detected in $W-$band meeting our selection criteria.  \label{fig_Q_value_histogram}}
 \centering
-\includegraphics[scale=0.6]{figures/W_phot_sel_mgs}
+\includegraphics[scale=0.6]{chIMACS/figures/W_phot_sel_mgs}
 \end{figure}
 
 \subsubsection{$H-[3.6]$ color selection criterion}
@@ -259,7 +219,7 @@ We required the $H-[3.6]$ color to appear redward of the assumed photospheric co
 \begin{figure}[ht!]
   \caption{$H-[3.6]$ color criterion.  The gray histrogram shows the distribution of the 42268 sources in the catalog with a $[3.6]$ measurement, while the colored histogram shows the distribution of sources with $H-[3.6]$ consistent with being in excess of the photospheres of young brown dwarfs, shown as the vertical line at 0.8.\label{fig_midIR_phot_sel}}
 \centering
-\includegraphics[scale=0.6]{figures/midIR_phot_sel}
+\includegraphics[scale=0.6]{chIMACS/figures/midIR_phot_sel}
 \end{figure}
 
 
@@ -268,7 +228,7 @@ We required the $H-[3.6]$ color to appear redward of the assumed photospheric co
 Table \ref{tbl_scoring2Priority} shows our scoring system for translating selection criteria into priority for observation.  Naturally, the candidates that met all criteria were ranked as the highest priority for observations, since we deemed these sources as most likely to be spectroscopically confirmed as young brown dwarfs.  Sources that met none of our four criteria were dismissed.  Sources that met some of the criteria but not others were rank ordered based on the tradeoff for what was most likely to pan out, and what was most scientifically interesting.  We kept the top ten priorities.
 
 
-\input{tables/tbl_scoring2Priority.tex}
+\input{chIMACS/tables/tbl_scoring2Priority.tex}
 
 
 Here we briefly justify our rankings for the second and third place priority rankings.  The prospect of discovering diskless young brown dwarfs directly addressed our science question of whether disks around young brown dwarfs are longer lived than their T-Tauri counterparts \citep{2008ApJ...681.1584R}.  So sources that met all criteria except the mid infrared excess criterion were ranked priority 2.  These sources, if confirmed, represent Class III analogs to T-Tauri stars.  Priority 2 sources are also consistent with foreground or background M or L type dwarfs, so we projected high levels of contamination.
@@ -277,11 +237,11 @@ Priority 3 sources are analogous to most other surveys for young brown dwarfs.  
 
 
 \subsection{Whittling down from 54373 to $\sim$500}
-Equipped with a prioritized list of candidates, we designed multi-object slit masks for IMACS \citep{2011PASP..123..288D}.  The MaskGen software\footnote{See \url{ http://code.obs.carnegiescience.edu/maskgen}} takes a prioritized list of sources and optimizes the placement of slits for the highest scientific return.  Our science goal required a wavelength range of $\sim 650-900$ nm for broad-band spectral typing and H$\alpha$ equivalent width measurement.  Measurement spectrally narrow gravity-sensitive features indicative of youth \citep{1999ApJ...525..466L, 2007AJ....134.2398C, 2009AJ....137.3345C} was top level requirement.  This requirement imposed required spectral resolution $\sim1000$.  These specifications limited the number of slits that fit on a multi-object slit mask to $\sim100$.
+Equipped with a prioritized list of candidates, we designed multi-object slit masks for IMACS \citep{2011PASP..123..288D}.  The MaskGen software\footnote{See \url{ http://code.obs.carnegiescience.edu/maskgen}} takes a prioritized list of sources and optimizes the placement of slits for the highest scientific return.  Our science goal required a wavelength range of $\sim 650-900$ nm for broad-band spectral typing and H$\alpha$ equivalent width measurement.  Measurement spectrally narrow gravity-sensitive features indicative of youth \citep{1999ApJ...525..466L,2007AJ....134.2398C,2009AJ....137.3345C} was top level requirement.  This requirement imposed required spectral resolution $\sim1000$.  These specifications limited the number of slits that fit on a multi-object slit mask to $\sim100$.
 
 The IMACS $F/2$ camera delivers a $27.4'$ diameter field of view.  It would take six such IMACS fields to cover the spatial extent of our entire catalog.  We made 6 slit masks in total.  Availability of bright Shack-Hartmann stars limited the available center positions and rotations of the masks.  We settled on center positions that included the most priority 1's, 2's, and 3's.  The center positions, orientation, and slit positions of all the slit masks are downloadable online \footnote{\url{http://www.lco.cl/telescopes-information/magellan/instruments/imacs/making-and-submitting-imacs-slitmasks}}.  Table \ref{tbl_IMACSslitMasks} lists the slit masks used in this study.  More details of the slit masks can be found at the IMACS slitmask archive.
 
-\input{tables/tbl_IMACSslitMasks.tex}
+\input{chIMACS/tables/tbl_IMACSslitMasks.tex}
 
 %------------------------------------------------------------------------------------------
 \section{Spectroscopic observations}
@@ -348,7 +308,7 @@ We dereddened all spectra by their estimated extinctions.  The dereddened spectr
 \begin{figure}[ht!]
 \caption{Comparison of first- and second- pass visual spectral classification.  The first pass (labeled observed) obtains a biased estimate of the spectral type, which is used to estimate the reddening from photometry.  The second pass is on the dereddened spectra.  The one-to-one line is shown in long dashes.  Spectra on the high end of our extinction range are classified as 1-2 subtypes later than those that have been dereddened.  A third pass is not attempted and would not change the reddening estimate substantially, except for perhaps sources near the M-L transition.  For those sources we assign a 2 sub-type uncertainty.  Jitter has been added to the spectral subtypes to ease comparison of multiple overlapping sources \label{fig_dereddened_comparison} }
 \centering
-\includegraphics[scale=0.5]{figures/dereddened_spt_comparison}
+\includegraphics[scale=0.5]{chIMACS/figures/dereddened_spt_comparison}
 \end{figure}
 
 For most sources, the second pass spectral type is the final spectral type we assign.  Since the $J-H$ value to which we deredden is fairly constant from M4$-$M9, there is little to gain by re-estimating the extinction from the revised spectral type.  We identify no sources with spectral type later than M9.  
@@ -359,14 +319,14 @@ We revised the spectral type for sources that show evidence of youth through the
 \begin{figure}[ht!]
 \caption{IMACS spectra of new 10 members of \emph{Ophiuchus}.  The members all demsontrate spectroscopic evidence of youth evinced by their weak Na~I feature at 8200$\angstrom$.  Source 2mx\_10919 is missing the Na~I feature but demonstrates exceptionally large H$\alpha$ attributable to accretion.  The spectra have been Gaussian smoothed with a 7$\angstrom$ kernel bandwidth.  All spectra were corrected for telluric absorption.  The spectra are normalized at 7500 $\angstrom$ and offset by 1 in the vertical direction. \label{fig_IMACS_spectra1} }
 \centering
-\includegraphics[scale=0.65]{figures/IMACS_spectra_M0_M6}
+\includegraphics[scale=0.65]{chIMACS/figures/IMACS_spectra_M0_M6}
 \end{figure}
 
 
 \begin{figure}[ht!]
 \caption{IMACS spectra of 5 new young brown dwarfs with spectral types M6$-$M8.5.  Same scaling as in Figure \ref{fig_IMACS_spectra1}. \label{fig_IMACS_spectra2} }
 \centering
-\includegraphics[scale=0.65]{figures/IMACS_spectra_M6_M8p5}
+\includegraphics[scale=0.65]{chIMACS/figures/IMACS_spectra_M6_M8p5}
 \end{figure}
 
 \subsection{Spectral comparison sample}
@@ -375,14 +335,14 @@ We assembled a spectral comparison sample to quantify the gavity-sensitivity of 
 We constructed the spectral comparison sample from the RIZzo database \citep{cruz_kelle_2014_10721}, which includes 803 sources- 135 giants, 29 intermediate gravity sources (classified as $\beta$, $\delta$, or $\gamma$ \citep{2009AJ....137.3345C}), and 639 other sources which are mostly old field brown dwarfs or very low mass stars, but contains a few other interlopers and peculiar spectra.  Since the vast majority are field brown dwarfs simply treat them as such.  We crossmatched the RIZzo sample with Simbad to verify their spectral classifications.  A minuscule fraction of the sources had spectral types discordant by more than 1 subtype.  We made no attempt to remove these sources, since we are only using the aggregate properties of the comparison sample.
 
 \subsection{Gravity sensitive indices}
-The gravity sensitive Na~I line at 8200 \angstrom$\;$ indicates whether or not our candidate young brown dwarfs are pre-main sequence young substellar objects \citep{1999ApJ...525..466L, 2007AJ....134.2398C, 2009AJ....137.3345C}.  Figure \ref{fig_NaI_EW} shows the spectral type versus pseudo equivalent width of the Na~I line.  The continuum is ill-defined at low spectral resolution in our heavily line-blanketed spectra in the wavelength region of interest.  Regardless, the index clearly distinguishes between dwarfs and giants taken from the RIZzo comparison sample.
+The gravity sensitive Na~I line at 8200 \angstrom$\;$ indicates whether or not our candidate young brown dwarfs are pre-main sequence young substellar objects \citep{1999ApJ...525..466L,2007AJ....134.2398C,2009AJ....137.3345C}.  Figure \ref{fig_NaI_EW} shows the spectral type versus pseudo equivalent width of the Na~I line.  The continuum is ill-defined at low spectral resolution in our heavily line-blanketed spectra in the wavelength region of interest.  Regardless, the index clearly distinguishes between dwarfs and giants taken from the RIZzo comparison sample.
 
 We adopted the continuum and feature indices defined by \citet{2012AJ....143..114S}, namely a central wavelength $\lambda_c= 8190 \angstrom$ and measurement window $\delta \lambda = 22 \angstrom$.  We assigned an uncertainty $\sigma_{EW}$ to the equivalent width by adding in quadrature the uncertainty in the mean of the feature and continuum indices.  We defined a Na~I youth detection as 3$\sigma$ below the bottom 10\% of Na~I equivalent width values of RIZzo dwarfs for a given spectral type.  The 10\% boundary is shown as a solid line in Figure \ref{fig_NaI_EW}.  We also overplot the Na~I EWs of Beta Pic moving group members tabulated in \citet{2012AJ....143..114S}.  Our Na~I EW threshold cuts out some of sources in the 10-20 Myr Beta Pic moving group \citep{2012AJ....143..114S} at spectral types M3 and earlier.  Therefore our Na~I EW threshold is likely overly restrictive at early spectral types, and overly inclusive at late spectral types.  We also compared the Na~I EWs for our sample to those for members of Upper Scorpius \citep{2006AJ....131.3016S}.  Specifically we converted the ratio computed in their Table 1 to an equivalent width, and found a range of about 0.6$-$4.2 $\angstrom$ for spectral types M5 to M8, comparable to the range we see.  Forty two spectra were on the side of the Na~I EW threshold that makes us think they are young.
 
 \begin{figure}[ht!]
   \caption{Na~I 8190 equivalent width as a function of spectral type from M0 to L5.  The sequence shows a clear bifurcation, splitting into groups of relatively high surface gravity (dwarfs, red points at the top), and low surface gravity (giants, blue points at the bottom).  Objects classified as intermediate gravity ($\beta$, $\gamma$, or $\delta$) are shown as purple circles.  Young 10-20 Myr sources in the Beta Pictoris moving group (BPMG, \citet{2012AJ....143..114S}) are shown as large orange circles.  The dotted black line shows the median of the field dwarfs in Rizzo.  The solid black line excludes 90\% of the field objects, and defines our criterion for Na~I EW indicative of youth.  The green squares are young brown dwarf candidates from this work that meet the youth criterion.  The brown triangles are sources that do not meet the criterion for youth.\label{fig_NaI_EW} }
 \centering
-\includegraphics[scale=0.6]{figures/NaI_EW}
+\includegraphics[scale=0.6]{chIMACS/figures/NaI_EW}
 \end{figure}
 
 \subsection{H$\alpha$ emission}
@@ -391,7 +351,7 @@ We computed the $H\alpha$ equivalent width using the same feature and continuum 
 \begin{figure}[ht!]
   \caption{H$\alpha$ equivalent width as a function of spectral type from M0 to L5.  The sequence shows a large spread in values for spectral types later than the M4 transition.  The symbol colors and shapes are the same as in Figure \ref{fig_NaI_EW}.  The dotted black line shows the median of the field dwarfs in Rizzo.  The solid black line excludes 90\% of the field objects, and defines our threshold for H$\alpha$ emission indicative of youth.  The green squares are young brown dwarf candidates from this work that meet this youth criterion at greater than $3\sigma_{EW}$.  The brown triangles are sources that do not meet the criterion. \label{fig_Ha_EW} }
 \centering
-\includegraphics[scale=0.6]{figures/Ha_EW}
+\includegraphics[scale=0.6]{chIMACS/figures/Ha_EW}
 \end{figure}
 
 
@@ -407,13 +367,13 @@ We computed luminosities for all 71 sources with late M or L spectral types.  We
 Equipped with derived effective temperatures and luminosities, we placed all 71 late type sources on an HR diagram.  Figure \ref{fig_HRD_NaI_Ex} shows the HR diagram with the pre-main sequence (PMS) evolutionary model tracks of \citep{1998A&A...337..403B,2002A&A...382..563B}.  The dotted lines are logarithmically spaced model isochrones from 1 Myr to 1 Gyr.  The solid black lines show the evolutionary track for sources down to 20 $M_{Jup}$.  The key idea from this Figure is that our sample is split into two populations- those below the main sequence and those above the main sequence.  Below the main sequence, sources are likely to be warmer, more distant background dwarfs.  Alternatively, a source can have a position in the HR diagram below the main sequence if it has a nearly edge-on disk.  These sources would have evidence for a mid-IR excess.  Sources OPH\_349 and OPH\_2 demonstrate potential edge-on disks.  Sources above the main sequence could be in the foreground, so membership assignment also requires evidence of low surface gravity from the optical spectroscopy.  Table \ref{tbl_members_phot} lists the properties for the 16 sources that we define as members.
 
 \begin{landscape}
-	\input{tables/tbl_members_phot_deluxe.tex}
+	\input{chIMACS/tables/tbl_members_phot_deluxe.tex}
 \end{landscape}
 
 \begin{figure}[ht!]
   \caption{Pre main sequence HR diagram indicating membership of new young very low mass stars and brown dwarfs to \emph{Ophiuchus}.  The green circles are members based in part on their position in this diagram.  The red squares are sources without evidence for membership, or evidence of non-membership.  Sources OPH\_349 and OPH\_2 are edge-on disks, based on the presence of mid-IR excess, suppressed near-IR and optical colors, and their apparent position below the main sequence in this diagram. \label{fig_HRD_NaI_Ex} }
 \centering
-\includegraphics[scale=0.6]{figures/HRD_zoom.pdf}
+\includegraphics[scale=0.6]{chIMACS/figures/HRD_zoom.pdf}
 \end{figure}
 
 \subsection{Spectral Energy Distributions}
@@ -425,13 +385,13 @@ We explored the diversity of mid-IR excess emission properties by constructing s
 \begin{figure}[ht!]
   \caption{ Spectral energy distributions (SEDs) of 9 members with spectral types M5$-$M6.  The gray circles show the observed photometry.  The green squares show the photometry corrected for the extinction value derived from the first pass spectral typing.  Both the observed and extinction corrected photometric data have been normalized by the extinction corrected $H-$band measurement.  The red dotted line shows the black body with temperature equal to $T_{\mathrm{eff}}$ for each source.  \label{fig_SEDs_9panel} }
 \centering
-\includegraphics[scale=0.6]{figures/SEDS_9panel}
+\includegraphics[scale=0.6]{chIMACS/figures/SEDS_9panel}
 \end{figure}
 
 \begin{figure}[ht!]
   \caption{ Spectral energy distributions (SEDs) of 7 members with spectral types M6-M8.5.  The plots have the same symbols and scaling as in Figure \ref{fig_SEDs_9panel}.  \label{fig_SEDs_7panel} }
 \centering
-\includegraphics[scale=0.6]{figures/SEDS_7panel}
+\includegraphics[scale=0.6]{chIMACS/figures/SEDS_7panel}
 \end{figure}
 
 %------------------------------------------------------------------------------------------
@@ -441,7 +401,7 @@ We explored the diversity of mid-IR excess emission properties by constructing s
 We adopted a holistic approach to assigning membership to the 71 targets to arrive at 16 sources with confident evidence for membership.  An additional 3 sources are consistent with membership, but lack have spectral types M4 or earlier, which makes their Na~I equivalent widths difficult to distinguish between dwarfs and YSOs.  The remainder of targets have evidence for high gravity features and/or are below the main sequence line and are therefore deemed dwarf contaminants.  Table \ref{tbl_members_phys} lists the derived properties for the final sample of 16 members.  
 
 \begin{landscape}
-	\input{tables/tbl_members_physics_deluxe.tex}
+	\input{chIMACS/tables/tbl_members_physics_deluxe.tex}
 \end{landscape}
 
 \subsection{Discussion of individual sources}
@@ -490,17 +450,17 @@ Figures \ref{fig_SEDs_9panel} and \ref{fig_SEDs_7panel} include the conspicuousl
   \caption{Images of OPH\_349 with the nearby OPH\_26571.  Images are from right to left: MOSAIC $I-$band, $[3.6]$, $[8.0]$.}
 \begin{minipage}[b]{0.3\linewidth}
 \centering
-\includegraphics[scale=0.15]{figures/OPH_349_I_image}
+\includegraphics[scale=0.15]{chIMACS/figures/OPH_349_I_image}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}[b]{0.3\linewidth}
 \centering
-\includegraphics[scale=0.15]{figures/OPH_349_IRAC1_image}
+\includegraphics[scale=0.15]{chIMACS/figures/OPH_349_IRAC1_image}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}[b]{0.3\linewidth}
 \centering
-\includegraphics[scale=0.15]{figures/OPH_349_IRAC4_image}
+\includegraphics[scale=0.15]{chIMACS/figures/OPH_349_IRAC4_image}
 \end{minipage}
 \end{figure}
 
@@ -511,7 +471,7 @@ We looked at the distributions of the mid-IR slope of our new members to quantif
 \begin{figure}[ht!]
   \caption{ Distribution of $[3.6]-[8.0]$ as a function of spectral type for new young stellar and substellar objects in this work (white squares with black edges).  The distribution of 187 Class I, II, and III Taurus members with spectral types later than M0 \citep{2010ApJS..186..111L} is shown as the kernel density estimate contours in the background.  The black circles with white edges are the 8 sources towards \emph{Ophiuchus} from \citet{allers06} with spectral types from \citet{2011ASPC..448..633G}.  The white dashed line is constructed from Class III young stellar and substellar objects in $\eta$ Cha, $\epsilon$ Cha, and TWA \citep{2010ApJS..186..111L}, and represents the photospheric colors of young objects.  The two edge-on disks OPH\_2 and OPH\_349 are outliers in this plot.  The two Class II sources are 2mx\_10919 and 2mx\_14856.  The other 12 members are class III sources.  \label{fig_I1_I4_density} }
 \centering
-\includegraphics[scale=0.6]{figures/I1_I4_density.pdf}
+\includegraphics[scale=0.6]{chIMACS/figures/I1_I4_density.pdf}
 \end{figure}
 
 We leveraged the class III analogs in our new sample to construct mid-IR photospheric colors of late-type sources.  \citet{2010ApJS..186..111L} construct the photospheric colors of young objects as a function of spectral type with evolved class III objects in $\eta$ Cha, $\epsilon$ Cha, and TWA\footnote{The original table with these values contains an error, see the erratum in \cite{2010ApJS..189..353L}}.  We extend the relationship of \citet{2010ApJS..186..111L} with more late-type sources by combining our sample with theirs.  Figure \ref{fig_midIR_results} shows a close-up on the mid-IR colors of old field dwarfs \citep{2006ApJ...651..502P}, young Taurus members \citep{2010ApJS..186..111L}, and \emph{Ophiuchus} members from \citep{allers06} and this work.  The increasing dichotomy between the background density of Taurus members as a function of wavelength can be understood as the mid-IR excess detaching from the photosphere.  This work has added 3 diskless $\sim$M8 sources, which are among the few diskless objects at such late spectral types for such young ages.  These sources agree with the the \citet{2006ApJ...651..502P} and \citep{2010ApJS..186..111L} to within the measurement uncertainties.
@@ -521,7 +481,7 @@ We leveraged the class III analogs in our new sample to construct mid-IR photosp
   \caption{ Mid-IR colors as a function of spectral type for our new members.  New young stellar and substellar objects in this work are white squares with black edges and error bars.  The distribution of 187 Class I, II, and III Taurus members with spectral types later than M0 \citep{2010ApJS..186..111L} is shown as the kernel density estimate contours in the background.  The black circles with white edges are the 8 sources towards \emph{Ophiuchus} from \citet{allers06} with spectral types from \citet{2011ASPC..448..633G}.  The white dashed line is constructed from Class III young stellar and substellar objects in $\eta$ Cha, $\epsilon$ Cha, and TWA \citep{2010ApJS..186..111L}, and represents the photospheric colors of young objects.  The photospheric colors of field dwarfs from \citet{2006ApJ...651..502P} are shown as blue diamonds. 
   The increasing dichotomy between the background density of Taurus members as a function of wavelength can be understood as the mid-IR excess detaching from the photosphere.    \label{fig_midIR_results} }
 \centering
-\includegraphics[scale=0.6]{figures/midIR_phot_results.pdf}
+\includegraphics[scale=0.6]{chIMACS/figures/midIR_phot_results.pdf}
 \end{figure}
 
 %------------------------------------------------------------------------------------------
@@ -550,7 +510,7 @@ The $Q$ value is designed to correlate roughly with the spectral type.  We use o
 \begin{figure}[ht!]
   \caption{ Performance of the $W-$filter $Q$ value as a function of spectral classification.  The blue squares are members, the green squares are late-type non-members.  The left portion of the plot shows the probability density function for the parent catalog of 31348 sources with a $W-$filter measurement (red stepped histogram with fine binning centered at $Q=0.0$).  The probability density distribution of all the late-type non-members is shown as the blue stepped histogram with coarse binning. We have excluded the outlier 1622-2405, a known binary brown dwarf, from the figure.  The spectral type positions have a small ($\sim0.1$ spectral subtype jitter added to them to displace the points for legibility).\label{fig_W_results} }
 \centering
-\includegraphics[scale=0.6]{figures/W_filter_results}
+\includegraphics[scale=0.6]{chIMACS/figures/W_filter_results}
 \end{figure}
 
 \subsection{Prospects for future surveys}
@@ -576,16 +536,16 @@ With all those provisos, we will speculate here about the IMF.  Assuming all the
 \begin{figure}[ht!]
   \caption{ Distributions of luminosities of all 71 sources demonstrating M or L spectral types, overplotted with the 16 confirmed young stellar objects. \label{fig_luminosity_dist} }
 \centering
-\includegraphics[scale=0.6]{figures/luminosity_histogram}
+\includegraphics[scale=0.6]{chIMACS/figures/luminosity_histogram}
 \end{figure}
 
 
 \subsection{Is there a higher incidence of edge-on disks in BDs?}
-One main result of this work is the identification of two  edge-on disks, our of only 5 disk-bearing sources in our sample.  Taken at face value, 40\% of the disk-bearing sources in our sample have disks.  This result is not a selection effect, since we were sensitive to the substellar photospheres, as demonstrated in our detection of diskless young brown dwarfs.  A 40\% edge-on disk fraction is much higher than the incidence observed in surveys of higher mass stars, in which only a few edge-on disks are found compared to face-on disks.  We interpret this high fraction has tentative evidence that brown dwarf disks have a larger scale height for a given radial position.  This interpretation is consistent with our intuition that the vertical component of gravity should be much lower for a given radial position, and that the disk orientation should be isotropic on the sky.  Of course, the achieved scale height also depends on the degree of turbulence in the disk, so a detailed analysis would have to consider the average temperature and diffusion timescales at a given location in the disk \citep{2012A&A...539A...9M, 2009MNRAS.394L.141E}.  However, \emph{on average}, the systematic bias should tend towards higher gravitational scale height for brown dwarf disks, at a given radial distance.
+One main result of this work is the identification of two  edge-on disks, our of only 5 disk-bearing sources in our sample.  Taken at face value, 40\% of the disk-bearing sources in our sample have disks.  This result is not a selection effect, since we were sensitive to the substellar photospheres, as demonstrated in our detection of diskless young brown dwarfs.  A 40\% edge-on disk fraction is much higher than the incidence observed in surveys of higher mass stars, in which only a few edge-on disks are found compared to face-on disks.  We interpret this high fraction has tentative evidence that brown dwarf disks have a larger scale height for a given radial position.  This interpretation is consistent with our intuition that the vertical component of gravity should be much lower for a given radial position, and that the disk orientation should be isotropic on the sky.  Of course, the achieved scale height also depends on the degree of turbulence in the disk, so a detailed analysis would have to consider the average temperature and diffusion timescales at a given location in the disk \citep{2012A&A...539A...9M,2009MNRAS.394L.141E}.  However, \emph{on average}, the systematic bias should tend towards higher gravitational scale height for brown dwarf disks, at a given radial distance.
 
 \subsection{Are any of these sources from Upper Sco?}
 
-One of the main potential uncertainties throughout all of this work is the question of whether the young sources belong to the younger \emph{Ophiuchus} or the older \emph{Upper Scorpius}.  Our region sits between these two on the sky, so it's conceivable that some of our detections include a mix of these two populations.  By plotting the projected positions of known objects, we can get an estimate of the surface number density of low mass objects.  Extrapolating roughly from \citet{2006AJ....131.3016S, 2012ApJ...758...31L} we estimate that about 2$-$4 Upper Sco objects could be in our region.  This number is consistent with the appears of our HR diagram, in which 4 objects sit substantially lower than the 10 Myr isochrone, but above the 100 Myr isochrone.  The slightly older and more distant population of Upper Sco would be expected to occupy a region in this vicinity.  The fact that the disks are more evolved is consistent with an interpretation of an older, $\sim5$ Myr population.
+One of the main potential uncertainties throughout all of this work is the question of whether the young sources belong to the younger \emph{Ophiuchus} or the older \emph{Upper Scorpius}.  Our region sits between these two on the sky, so it's conceivable that some of our detections include a mix of these two populations.  By plotting the projected positions of known objects, we can get an estimate of the surface number density of low mass objects.  Extrapolating roughly from \citet{2006AJ....131.3016S,2012ApJ...758...31L} we estimate that about 2$-$4 Upper Sco objects could be in our region.  This number is consistent with the appears of our HR diagram, in which 4 objects sit substantially lower than the 10 Myr isochrone, but above the 100 Myr isochrone.  The slightly older and more distant population of Upper Sco would be expected to occupy a region in this vicinity.  The fact that the disks are more evolved is consistent with an interpretation of an older, $\sim5$ Myr population.
 
 \subsection{How do these sources compare to Allers et al. 2006?}
 All of the candidates in \citet{allers06} exhibited mid-IR excess.  The members reported here are predominantly disk-\emph{less}, based on their photospheric mid-IR colors.  The difference between these two results is wholly due to the disparate selection methods.  Specifically the $W-$ filter offers us the ability to isolate sources with late-type spectra, regardless of their mid-IR photospheric properties.  
@@ -597,26 +557,8 @@ All of the candidates in \citet{allers06} exhibited mid-IR excess.  The members 
 
 We have reported on a broad-band survey aimed at the discovery of young brown dwarfs and very low mass stars towards the \emph{Ophiuchus} star forming region.  We present the selection, spectral analysis, discovery, spectral types, luminosities, and physical characterization of a population of 12 young members, and 3 candidates of an off-core region towards \emph{Ophiuchus}.  Five of the 12 members show disks, while the other 7 members and 3 candidates show photospheric mid-IR colors.  All members show strong evidence for youth through their gravity-sensitive spectral features.  Specifically the Na~I lines are comparable to 1-3 Myr Taurus and Cha I members reported by Luhman and collaborators.  We interpret the majority of these photospheric young sources towards \emph{Ophiuchus} as Class III analogs- diskless young brown dwarfs that have already accreted their disks.  The prevalence of these sources is tantalizing evidence for a shorter-lived disk lifetime for very low mass stars and brown dwarfs than had been previously thought.  This shorter disk lifetime for brown dwarfs would put brown dwarf disk lifetimes more in line with their higher mass T-Tauri star counterparts.  We also take the prevalence of Class III analogs in this study compared to other studies as evidence for a possible bias in selection for sources with evidence for mid-IR excess.  This bias would manifest as an underestimated brown dwarf to star number density ratio, and an over-estimated disk lifetime.  Our key tool in avoiding this bias is the introduction of a custom filter that isolates late type sources from the large number of reddened contaminants.  This work lends modest support for an overall higher ratio of brown dwarfs to stars than had previously been thought.  We caution that contamination from Upper Scorpius could decrease the effect size seen here, but anticipate changes of merely a few objects, based on the low surface number density of Upper Sco.
 
-%------------------------------------------------------------------------------------------
-\section{Comments on individual sources}
-%------------------------------------------------------------------------------------------
-
-
 \section{Acknowledgments}
 
 This research has benefited from the Ultracool RIZzo Spectral Library (\url{http://dx.doi.org/10.5281/zenodo.11313}), maintained by Jonathan Gagn\`{e} and Kelle Cruz.  This research has made use of NASA's Astrophysics Data System.  This research made use of Astropy\footnote{\url{http://www.astropy.org}}, a community-developed core Python package for Astronomy \citep{2013A&A...558A..33A}.  Many of the figures in the paper were made with Matplotlib \citep{Hunter:2007} in IPython Notebooks \citep{PER-GRA:2007}.  The Notebooks with complete version history are available on GitHub\footnote{\url{https://github.com/BrownDwarf/BAADE}}.  MGS acknowledges support from the NASA Graduate Student Research Program (GSRP) Fellowship, grant NNX10AK82H
-
-\clearpage
-%------------------------------------------------------------------------------------------
-%\section{Appendix}
-%------------------------------------------------------------------------------------------
-
-
-%------------------------------------------------------------------------------------------
-%Bibliography
-%------------------------------------------------------------------------------------------
-\bibliographystyle{apj}
-\bibliography{ms}
-
 
 \end{document}
