@@ -1,8 +1,8 @@
+\chapter{Evolved disk population of young brown dwarfs towards \emph{Ophiuchus}}
+
 %------------------------------------------------------------------------------------------
 \section{Introduction}
 %------------------------------------------------------------------------------------------
-
-
 
 \subsection{Young brown dwarfs as a laboratory to study star formation}
 
@@ -101,7 +101,7 @@ One main potential advantage of the $W-$band filter is its \emph{reddening insen
 
 The $W-$ band photometry in this work was observed with the University of Hawaii 88" telescope with the ULBCAM imager.  The individual photometric frames were dark subtracted, divided by a normalized flat, and median combined following the procedure of \cite{allers06}.  We use the Source Extractor \citep{1996A&AS..117..393B} to perform aperture photometry on the $W-$band photometry.  The yellow outline in Figure \ref{fig_star_chart} shows the region for which $W-$band photometry exists.
 
-\input{chIMACS/tables/tbl_photomCatalog}
+%\input{chIMACS/tables/tbl_photomCatalog}
 
 \subsection{ISPI $JH$ Catalog ($\sim3.3$ magnitudes deeper than 2MASS)}
 We established a source catalog based on the ISPI $JH$ photometry, which had the most spatial coverage.  Membership to the catalog requires $5\; \sigma$ detection in \emph{both} $J$ and $H$ bands.  \emph{A total of 54373 sources met this criterion, setting the length of our catalog at 54373}.  This catalog is demarcated by the solid blue line in Figure \ref{fig_star_chart}.  We refer to this catalog as the ``ISPI $JH$ Catalog''.  We justified the $JH$ detection requirement because these are the bands in which young brown dwarfs peak in flux.   Sources below our 5~$\sigma$ detection limits in $J-$ and $H-$ bands would stand little chance of follow up near-IR spectroscopy with existing instrumentation.  Further, sources with red optical minus IR colors---an expectation for late-type reddened young brown dwarfs---would stand even less of a chance of optical spectroscopic follow up.  
@@ -130,7 +130,7 @@ We first considered the sensitivity of the instrument to set the limiting magnit
 
 We devised four physically motivated selection criteria.  Each criterion incorporated a different aspect of known or expected physics.  The criteria are broadly $IJHK$ colors, $H- [3.6]$, custom $W-$filter, and mid-IR excess.  The criteria are binary-- the candidate met the criterion or it did not.  In this section we describe the motivation and justification for the details of these four selection criteria.  In the next subsection we describe the method we used for combining the various combinations of these 4 criteria to issue an observation priority for each candidate.  Table \ref{tbl_selectionScores} summarizes the four criteria.
 
-\input{chIMACS/tables/tbl_selectionScores.tex}
+%\input{chIMACS/tables/tbl_selectionScores.tex}
 
 \subsubsection{Near-IR photometric selection}
 \label{sec_NIR_selection}
@@ -227,7 +227,7 @@ For another example, consider priority 3 sources.  These sources satisfied the N
 
 In total, 483 sources had a top 10 observing priority.  The other 6 combinations of criteria (net scores 0, 1, 4, 5, 8, and 12) were assigned priority 100, ten times lower priority than our priority 10 sources.  These are listed in Table \ref{tbl_scoring2Priority} as ``other''.
 
-\input{chIMACS/tables/tbl_scoring2Priority.tex}
+%\input{chIMACS/tables/tbl_scoring2Priority.tex}
 
 \subsection{Whittling down from 54373 to $\sim$500}
 Equipped with a prioritized list of candidates, we designed multi-object slit masks for IMACS.  The MaskGen software\footnote{See \url{ http://code.obs.carnegiescience.edu/maskgen}} takes a prioritized list of sources and optimizes the placement of slits for the highest number of high priority sources.  Our science goal required a wavelength range of $\sim 650-900$ nm for broad-band spectral typing and H$\alpha$ equivalent width measurement.  Measurement of spectrally narrow gravity-sensitive features indicative of youth \citep{1999ApJ...525..466L,2007AJ....134.2398C,2009AJ....137.3345C} was a top level requirement.  This requirement imposed spectral resolution $R\sim1000$.
@@ -235,7 +235,7 @@ Equipped with a prioritized list of candidates, we designed multi-object slit ma
 Availability of bright stars needed by the telescope active optics system for real-time calibration constrained the available center positions and rotations of the masks.  We settled on center positions that included the most priority 1's, 2's, and 3's.  The center positions, orientation, and slit positions of all the slit masks are downloadable online \footnote{\url{http://www.lco.cl/telescopes-information/magellan/instruments/imacs/making-and-submitting-imacs-slitmasks}}.  Table \ref{tbl_IMACSslitMasks} lists the slit masks used in this study.
 
 
-\input{chIMACS/tables/tbl_IMACSslitMasks.tex}
+%\input{chIMACS/tables/tbl_IMACSslitMasks.tex}
 
 %------------------------------------------------------------------------------------------
 \section{Spectroscopic observations}
@@ -334,11 +334,11 @@ We computed luminosities for all 71 sources with late M or L spectral types.  We
 Equipped with derived effective temperatures and luminosities, we placed all 71 late type sources on an HR diagram.  Figure \ref{fig_HRD_NaI_Ex} shows the HR diagram with the pre-main sequence (PMS) evolutionary model tracks of \citep{1998A&A...337..403B,2002A&A...382..563B}.  The dotted lines are logarithmically spaced model isochrones from 1 Myr to 1 Gyr.  The solid black lines show the evolutionary track for sources down to 20 $M_{Jup}$.  The key idea from this Figure is that our sample is split into two populations- those below the main sequence and those above the main sequence.  Below the main sequence, sources are likely to be more distant background dwarfs.  Alternatively, a source can have a position in the HR diagram below the main sequence if it has a nearly edge-on disk.  These sources would have evidence for a mid-IR excess.  Sources OPH\_349 and OPH\_2 are potential edge-on disk sources.  Sources above the main sequence could also possibly be in the foreground, so membership assignment also requires evidence of low surface gravity from the optical spectroscopy.  Tables \ref{tbl_members_phot} and \ref{tbl_members_phot_mid_IR} list the near-IR photometry and mid-IR photometry for the 16 sources that we define as members.  Table \ref{tbl_members_phys} lists their derived properties.
 
 \begin{landscape}
-	\input{chIMACS/tables/tbl_members_phot_deluxe.tex}
+	%\input{chIMACS/tables/tbl_members_phot_deluxe.tex}
 \end{landscape}
 
 \begin{landscape}
-	\input{chIMACS/tables/tbl_members_phot_deluxe_mid_IR.tex}
+	%\input{chIMACS/tables/tbl_members_phot_deluxe_mid_IR.tex}
 \end{landscape}
 
 \begin{figure}[ht!]
@@ -372,7 +372,7 @@ We explored the diversity of mid-IR excess emission properties by constructing s
 We adopted a holistic approach to assigning membership to the 71 targets with late-type spectra to arrive at 16 sources with confident evidence for membership.  An additional 3 sources are consistent with membership, but have spectral types M4 or earlier, which makes their Na~I equivalent widths difficult to distinguish between dwarfs and YSOs.  The remainder of targets have evidence for high gravity features and/or are below the main sequence line and are therefore deemed dwarf contaminants.  Table \ref{tbl_members_phys} lists the derived properties for the final sample of 16 members.  
 
 \begin{landscape}
-	\input{chIMACS/tables/tbl_members_physics_deluxe.tex}
+	%\input{chIMACS/tables/tbl_members_physics_deluxe.tex}
 \end{landscape}
 
 \subsection{Discussion of individual sources}
