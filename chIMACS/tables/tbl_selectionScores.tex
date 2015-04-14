@@ -1,0 +1,24 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE - Scores
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{deluxetable}{ccccccc}
+\tablecolumns{7} 
+\tabletypesize{\small}
+\tablecaption{Binary selection criteria \label{tbl_selectionScores}}
+\tablewidth{0pt}
+\tablehead{
+\colhead{Score} &
+\colhead{Criterion} &
+\colhead{IDs} &
+\colhead{$N$ meet} &
+\colhead{$N$ eligible} &
+\colhead{$\%$ catalog} &
+\colhead{$\%$ eligible} \\}
+\startdata
+	8 & $I-J$, $J-H$, $J-K$ & NIR & 3680 & 34469 & 6.8 & 10.7\\
+	4 & $H-[3.6]$, $K-[3.6]$ & $[3.6]$ & 23112 & 42268 & 43.5 & 54.6 \\
+	2 & $W-$ band & $W$ & 1180 & 31348 & 2.2 & 3.8\\
+	1 & Mid-IR excess & Disk & 1407 & 14095 & 2.6 & 10.0\\
+\enddata
+\tablecomments{The number of catalog members eligible to meet a criterion differs from the length of the catalog (54373) due to missing data in the form of non-detections or non-observation.}
+\end{deluxetable}
